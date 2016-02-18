@@ -70,7 +70,7 @@
 					</ul>
 				</a>
 			{else}
-				<a href="http://tieup.agilemedia.jp/preview/testing01/re_test/wimax/">
+				<a href="{base_url}/wimax/">
 					<h1>UQのクチコミ</h1>
 					<p>お客様の生のクチコミをまとめてお届け！</p>
 					<ul class="clearfix">
@@ -318,12 +318,6 @@
 										</li>
 									{elseif $view->params.plugin_url == 'mobile_price'}
 										<li class="article clearfix">
-											<a href="{base_url}/mobile_price_qa/">
-												<h3>【Q&A】データ容量の節約はできますか？</h3>
-
-											</a>
-										</li>
-										<li class="article clearfix">
 											<a href="{base_url}/mobile_price_info_01/">
 												<h3>【新登場】全部コミコミの新料金プラン「ぴったりプラン」登場</h3>
 
@@ -332,16 +326,26 @@
 										<li class="article clearfix">
 											<a href="{base_url}/mobile_price_info_02/">
 												<h3>【便利な使い方】データ容量を節約できる！ターボ機能</h3>
-
 											</a>
 										</li>
 										<li class="article clearfix">
 											<a href="{base_url}/mobile_price_info_03/">
 												<h3>【安心・便利】ぴったりアプリパック</h3>
+											</a>
+										</li>
+										<li class="article clearfix">
+											<a href="{base_url}/mobile_price_qa/">
+												<h3>【Q&A】データ容量の節約はできますか？</h3>
 
 											</a>
 										</li>
 									{elseif $view->params.plugin_url == 'mobile_product'}
+										<li class="article clearfix">
+											<a href="{base_url}/mobile_product_info/">
+												<h3>【新機種登場】約5.0インチの大画面。電池も余裕の3日持ちのarrows M02登場</h3>
+
+											</a>
+										</li>
 										<li class="article clearfix">
 											<a href="{base_url}/mobile_product_qa/#pro_qa1">
 												<h3>【Q&A】UQ mobileが使える機種はどこで確認できますか？</h3>
@@ -351,12 +355,6 @@
 										<li class="article clearfix">
 											<a href="{base_url}/mobile_product_qa/#pro_qa2">
 												<h3>【Q&A】スマホをセットで購入することはできますか？</h3>
-
-											</a>
-										</li>
-										<li class="article clearfix">
-											<a href="{base_url}/mobile_product_info/">
-												<h3>【新機種登場】約5.0インチの大画面。電池も余裕の3日持ちのarrows M02登場</h3>
 
 											</a>
 										</li>
@@ -639,6 +637,12 @@
 											</li>
 										{elseif $view->params.plugin_url == 'mobile_speed'}
 											<li class="contents_section speed">
+												<a href="{base_url}/mobile_speed_info/">
+													<h3>【下り最大150Mbps】下り最大150Mbpsの高速通信に対応！</h3>
+													<p><span class="view_btn">view</span></p>
+												</a>
+											</li>
+											<li class="contents_section speed">
 												<a href="{base_url}/mobile_speed_qa/#s_qa1">
 													<h3>【Q&A】ネットは快適につかえますか？</h3>
 													<p><span class="view_btn">view</span></p>
@@ -656,19 +660,7 @@
 													<p><span class="view_btn">view</span></p>
 												</a>
 											</li>
-											<li class="contents_section speed">
-												<a href="{base_url}/mobile_speed_info/">
-													<h3>【下り最大150Mbps】下り最大150Mbpsの高速通信に対応！</h3>
-													<p><span class="view_btn">view</span></p>
-												</a>
-											</li>
 										{elseif $view->params.plugin_url == 'mobile_price'}
-											<li class="contents_section price">
-												<a href="{base_url}/mobile_price_qa/">
-													<h3>【Q&A】データ容量の節約はできますか？</h3>
-													<p class="view_btn"><span>view</span></p>
-												</a>
-											</li>
 											<li class="contents_section price">
 												<a href="{base_url}/mobile_price_info_01/">
 													<h3>【新登場】全部コミコミの新料金プラン「ぴったりプラン」登場</h3>
@@ -687,7 +679,19 @@
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
+											<li class="contents_section price">
+												<a href="{base_url}/mobile_price_qa/">
+													<h3>【Q&A】データ容量の節約はできますか？</h3>
+													<p class="view_btn"><span>view</span></p>
+												</a>
+											</li>
 										{elseif $view->params.plugin_url == 'mobile_product'}
+											<li class="contents_section product">
+												<a href="{base_url}/mobile_product_info/">
+													<h3>【新機種登場】約5.0インチの大画面。電池も余裕の3日持ちのarrows M02登場</h3>
+													<p class="view_btn"><span>view</span></p>
+												</a>
+											</li>
 											<li class="contents_section product">
 												<a href="{base_url}/mobile_product_qa/#pro_qa1">
 													<h3>【Q&A】UQ mobileが使える機種はどこで確認できますか？</h3>
@@ -697,12 +701,6 @@
 											<li class="contents_section product">
 												<a href="{base_url}/mobile_product_qa/#pro_qa2">
 													<h3>【Q&A】スマホをセットで購入することはできますか？</h3>
-													<p class="view_btn"><span>view</span></p>
-												</a>
-											</li>
-											<li class="contents_section product">
-												<a href="{base_url}/mobile_product_info/">
-													<h3>【新機種登場】約5.0インチの大画面。電池も余裕の3日持ちのarrows M02登場</h3>
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
