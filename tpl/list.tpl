@@ -31,9 +31,9 @@
 		<script src="http://typesquare.com/accessor/apiscript/typesquare.js?Bh6KwcXf0GA%3D" type="text/javascript" charset="UTF-8"></script>
 		<script type="text/javascript">{literal}
 			$(function() {
-//				setTimeout(function(){
-//					$('.experience_ticker').vTicker();
-//				},5000);
+				setTimeout(function(){
+					$('.experience_ticker').vTicker();
+				},5000);
 			});
 		{/literal}</script>
 
