@@ -58,14 +58,25 @@
 	</head>
 	<body{if isset($body_for_layout)}{$body_for_layout|NOESCAPE}{/if}>
 		<header>
-			<a href="{base_url}/wimax/">
-			<h1><img src="{base_url}/img/uq/uq_logo.png" />のクチコミ</h1>
-			<p>お客様の生のクチコミをまとめてお届け！</p>
-			<ul class="clearfix">
-				<li class="header_wimax"><span>新生活のモバイルネット</span><img src="{base_url}/img/uq/uq_footerlogo.png"></li>
-				<li class="header_mobile"><span>あなたにぴったりくるスマホ</span><img src="{base_url}/img/uq/mobile_logo.png"></li>
-			</ul>
-			</a>
+			{if $view->params.plugin_url|mb_strpos:'wimax' !== FALSE}
+				<a href="{base_url}/wimax/">
+					<h1><img src="{base_url}/img/uq/uq_logo.png" />のクチコミ</h1>
+					<p>お客様の生のクチコミをまとめてお届け！</p>
+					<ul class="clearfix">
+						<li class="header_wimax"><span>新生活のモバイルネット</span><img src="{base_url}/img/uq/uq_footerlogo.png"></li>
+						<li class="header_mobile"><span>あなたにぴったりくるスマホ</span><img src="{base_url}/img/uq/mobile_logo.png"></li>
+					</ul>
+				</a>
+			{else}
+				<a href="http://tieup.agilemedia.jp/preview/testing01/re_test/wimax/">
+					<h1>UQのクチコミ</h1>
+					<p>お客様の生のクチコミをまとめてお届け！</p>
+					<ul class="clearfix">
+						<li class="header_wimax">UQ&nbsp;WiMAX</li>
+						<li class="header_mobile">UQ&nbsp;mobile</li>
+					</ul>
+				</a>
+			{/if}
 		</header>
 
 		{literal}<div class="gallery js-flickity _flickity_tmp_before_parent" data-flickity-options='{ "freeScroll": true, "wrapAround": true, "autoPlay": 5000,"resizeBound": true }'>{/literal}
