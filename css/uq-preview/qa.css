@@ -1,0 +1,548 @@
+/* pc start */
+@media print,screen and (min-width:799px){
+
+ section.qa .contents .text h3.qa_title {
+   font-size: 18px;
+    padding: 0px;
+    margin-bottom: 10px;
+ }
+
+section.qa .text p.question {
+    background: url('/preview/uq-wimax/img/uq/qa_q.png') no-repeat left 23%;
+    background-size: 25px;
+    padding: 5px 0px 10px 30px;
+    font-family: "Hiragino Kaku Gothic W3 JIS2004" !important;
+  }
+
+section.qa .text p.answer {
+    background: url('/preview/uq-wimax/img/uq/qa_a.png') no-repeat left 10%;
+    background-size: 25px;
+    padding: 5px 0px 15px 30px;
+    font-family: "Hiragino Kaku Gothic W3 JIS2004" !important;
+  }
+
+section.qa .text p.answer span {
+    display: block;
+    font-size: 11px;
+    line-height: 1.3em;
+  }
+
+   section.qa {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+   section.qa .contents .qa_main {
+    border: 2px solid #0099ff;
+    background: #fff;
+    border-radius: 3px;
+  }
+
+   section.qa .qa_main {
+    padding: 30px 50px;
+  }
+
+   section.qa .qa_main .title span {
+    font-size: 14px;
+    padding: 3px;
+    background: #fff95c;
+  }
+
+   section.qa h2 {
+    padding: 10px 0px;
+    font-size:24px;
+    color: #0099ff;
+    border-bottom: 1px solid #0099ff;
+  }
+
+   section.qa .text {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+   section.qa .text div {
+    padding: 20px 0px;
+    border-bottom: 1px dashed #0099ff;
+  }
+
+   section.qa .text div:last-child {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+   section.qa .text span {
+    font-size: 14px;
+    line-height: 1.4em;
+    display: block;
+  }
+
+   section.qa .text h3 {
+    padding: 5px 0px 15px 30px;
+  }
+
+   section.qa .text p.question {
+    background: url('/preview/uq-wimax/img/uq/qa_q.png') no-repeat left 23%;
+    background-size: 25px;
+  }
+
+   section.qa .text p.answer {
+    background: url('/preview/uq-wimax/img/uq/qa_a.png') no-repeat left 10%;
+    background-size: 25px;
+  }
+
+   section.qa p.more_btn {
+    width: 100%;
+  }
+
+   section.qa p.more_btn a {
+    display: block;
+    text-align: center;
+  }
+
+   section.qa p.more_btn a span {
+    display: block;
+    color: #003399;
+    padding: 10px 0px;
+    background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_b_on.png') no-repeat 41% center;
+    border: 1px solid #003399;
+  }
+
+   section.qa p.more_btn a span:hover {
+   display: block;
+   color: #fff;
+   padding: 10px 0px;
+   background: #003399 url('/preview/uq-wimax/img/uq/arrow_morebtn_b.png') no-repeat 41% center;
+  }
+
+   section.qa .relation {
+    height: auto;
+    margin-top: 50px;
+  }
+
+   section.qa .relation li.contents_section {
+    width: 331px;
+    float: left;
+    border: 1px solid #0099ff;
+    position: relative;
+    background: #fff;
+  }
+
+   section.qa .relation li.contents_section a {
+    display: block;
+    line-height: 1.5em;
+    font-size: 16px;
+    color: #000;
+  }
+
+   section.qa .relation li.speed a {
+    background: url('/preview/uq-wimax/img/uq/title_speed220m.png') no-repeat center 10%;
+  }
+
+   section.qa .relation li.speed a:hover {
+  background: #0099ff url('/preview/uq-wimax/img/uq/title_speed220m_w.png')no-repeat center 10%;
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+   section.qa .relation li.price a {
+    background: url('/preview/uq-wimax/img/uq/title_price.png') no-repeat center 10%;
+  }
+
+   section.qa .relation li.price a:hover {
+  background: #0099ff url('/preview/uq-wimax/img/uq/title_price_w.png')no-repeat center 10%;
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+   section.qa .relation li.product a {
+    background: url('/preview/uq-wimax/img/uq/title_product.png') no-repeat center 10%;
+  }
+
+   section.qa .relation li.product a:hover {
+  background: #0099ff url('/preview/uq-wimax/img/uq/title_product_w.png')no-repeat center 10%;
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+  section.qa .relation li.area a {
+    background: url('/preview/uq-wimax/img/uq/title_area.png') no-repeat center 10%;
+  }
+
+   section.qa .relation li.area a:hover {
+  background: #0099ff url('/preview/uq-wimax/img/uq/title_area_w.png')no-repeat center 10%;
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+   section.qa .relation li.contents_section a h3 {
+    padding: 70px 34px;
+  }
+
+   section.qa .relation li.contents_section a p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 329px;
+  background: #0099ff;
+  text-align: center;
+  height: 35px;
+  padding-top: 10px;
+  border: 1px solid #fff;
+  }
+
+   section.qa .relation li.contents_section a p span {
+  color: #fff;
+  background: url('/preview/uq-wimax/img/uq/arrow_view_b.png') no-repeat left center;
+  padding-left: 18px;
+  }
+
+   section.qa .relation p.title {
+    background: #0099ff;
+    color: #fff;
+    width: 180px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+/* mobile */
+
+#mobile_page section.qa .contents .qa_main {
+    border: 2px solid #e2007f;
+  }
+
+#mobile_page section.qa h2 {
+    color: #e2007f;
+    border-bottom: 1px solid #e2007f;
+  }
+
+#mobile_page section.qa .text div {
+    border-bottom: 1px dashed #e2007f;
+  }
+
+  #mobile_page section.qa .text div:last-child {
+    border-bottom: none;
+  }
+
+#mobile_page section.qa .text p.question {
+    background: url('/preview/uq-wimax/img/uq/qa_q_p.png') no-repeat left 23%;
+    background-size: 25px;
+  }
+
+#mobile_page section.qa .text p.answer {
+    background: url('/preview/uq-wimax/img/uq/qa_a_p.png') no-repeat left 10%;
+    background-size: 25px;
+  }
+
+#mobile_page section.qa p.more_btn a span {
+    background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_p_on.png') no-repeat 41% center;
+    border: 1px solid #e2007f;
+    color: #e2007f;
+  }
+
+#mobile_page section.qa p.more_btn a span:hover {
+   color: #fff;
+   background: #e2007f url('/preview/uq-wimax/img/uq/arrow_morebtn_p.png') no-repeat 41% center;
+  }
+
+#mobile_page section.qa .relation li.contents_section {
+    border: 1px solid #e2007f;
+  }
+
+  #mobile_page section.qa .relation li.contents_section a p span {
+    background:url('/preview/uq-wimax/img/uq/arrow_morebtn_p.png') no-repeat left center;
+  }
+
+  #mobile_page section.qa .relation li.speed a {
+    background: url('/preview/uq-wimax/img/uq/title_speed220m_p.png') no-repeat center 10%;
+  }
+
+  #mobile_page section.qa .relation li.speed a:hover {
+  background: #e2007f url('/preview/uq-wimax/img/uq/title_speed220m_w.png')no-repeat center 10%;
+  color: #fff;
+}
+
+#mobile_page section.qa .relation li.price a {
+    background: url('/preview/uq-wimax/img/uq/title_price_p.png') no-repeat center 10%;
+  }
+
+  #mobile_page section.qa .relation li.price a:hover {
+  background: #e2007f url('/preview/uq-wimax/img/uq/title_price_w.png')no-repeat center 10%;
+  color: #fff;
+}
+
+  #mobile_page section.qa .relation li.product a {
+    background: url('/preview/uq-wimax/img/uq/title_product_p.png') no-repeat center 10%;
+  }
+
+  #mobile_page section.qa .relation li.product a:hover {
+  background: #e2007f url('/preview/uq-wimax/img/uq/title_product_w.png')no-repeat center 10%;
+  color: #fff;
+}
+
+  #mobile_page section.qa .relation li.area a {
+    background: url('/preview/uq-wimax/img/uq/title_area_p.png') no-repeat center 10%;
+  }
+
+  #mobile_page section.qa .relation li.area a:hover {
+  background: #e2007f url('/preview/uq-wimax/img/uq/title_area_w.png')no-repeat center 10%;
+  color: #fff;
+}
+
+  #mobile_page section.qa .relation li.contents_section a p,
+  #mobile_page section.qa .relation p.title {
+    background: #e2007f;
+  }
+}
+
+
+/* sp start */
+@media print,screen and (max-width:800px){
+
+/* ナゾ見出し */
+
+section.qa .text span {
+    font-size: 12px;
+    line-height: 1.4em;
+    display: block;
+  }
+
+   section.qa .text p.question {
+    background: url('/preview/uq-wimax/img/uq/qa_q.png') no-repeat left top;
+    background-size: 25px;
+    padding: 5px 0px 10px 30px;
+    color: #000;
+    font-family: "Hiragino Kaku Gothic W3 JIS2004" !important;
+  }
+
+   section.qa .text p.answer {
+    background: url('/preview/uq-wimax/img/uq/qa_a.png') no-repeat left top;
+    background-size: 25px;
+    padding: 5px 0px 10px 30px;
+    color: #000;
+    font-family: "Hiragino Kaku Gothic W3 JIS2004" !important;
+  }
+
+/* ナゾ見出し */
+
+section.qa .text h3.qa_title {
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+  section.qa .contents {
+    margin: 5px 10px 0px;
+  }
+
+  section.qa .contents .qa_main {
+    border: 2px solid #0099ff;
+    padding: 10px;
+    background: #fff;
+  }
+
+  section.qa img {
+    width: 100%;
+  }
+
+  section.qa .contents .qa_main .title span {
+    font-size: 11px;
+    color: #000;
+    padding: 5px;
+    background: #fff95c;
+    line-height: 1.5em;
+  }
+
+   section.qa .contents .qa_main .title h2 {
+     font-size: 14px;
+     padding: 5px 0px;
+     color: #0099ff;
+     border-bottom: 1px solid #0099ff;
+     line-height: 1.2em;
+   }
+
+   section.qa .contents .qa_main .text {
+     font-size: 13px;
+     line-height: 1.5em;
+     color: #fff;
+   }
+
+   section.qa .contents .qa_main .text div {
+     padding: 10px 0px;
+     border-bottom: 1px dashed #0099ff;
+   }
+
+      section.qa .contents .qa_main .text div:last-child {
+     border-bottom: none;
+   }
+
+    section.qa .text span {
+    font-size: 12px;
+    line-height: 1.4em;
+    display: block;
+  }
+
+   section.qa .text h3 {
+    padding: 5px 0px 10px 30px;
+  }
+
+   section.qa .text p.question {
+    background: url('/preview/uq-wimax/img/uq/qa_q.png') no-repeat left top;
+    background-size: 25px;
+  }
+
+   section.qa .text p.answer {
+    background: url('/preview/uq-wimax/img/uq/qa_a.png') no-repeat left top;
+    background-size: 25px;
+  }
+
+
+   section.qa .contents .qa_main p.more_btn a {
+     display: block;
+   }
+
+   section.qa .contents .qa_main p.more_btn a span {
+     display: block;
+     color: #003399;
+     text-align: center;
+     padding: 15px 0px;
+     font-size: 12px;
+     background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_b_on.png') no-repeat 29% center;
+     background-size: 10px;
+     border: 1px solid #003399;
+   }
+
+section.qa .contents .relation {
+  padding: 20px 0px;
+}
+
+section.qa .contents .relation p.title {
+  font-size: 13px;
+  color: #fff;
+  width: 100px;
+  background: #0099ff;
+  padding: 5px;
+  text-align: center;
+}
+
+section.qa .contents .relation li.contents_section a {
+  display: block;
+  background: #fff url('/preview/uq-wimax/img/uq/arrow_right_b.png') no-repeat 97% center;
+  background-size: 10px;
+  border: 1px solid #0099ff;
+  padding-right: 34px;
+  height: auto !important;
+}
+
+section.qa .contents .relation li.contents_section a h3 {
+  border-right: 1px dotted #0099ff;
+  padding: 15px 10px;
+}
+
+section.qa .contents .relation li.contents_section a h3 span {
+  display: block;
+  padding-left: 25px;
+}
+
+section.qa .contents .relation li.speed a h3 span {
+  background: url('/preview/uq-wimax/img/uq/title_speed220m.png') no-repeat left center;
+  background-size: 20px;
+}
+
+section.qa .contents .relation li.price a h3 span {
+  background: url('/preview/uq-wimax/img/uq/title_price.png') no-repeat left center;
+  background-size: 20px;
+}
+
+section.qa .contents .relation li.product a h3 span {
+  background: url('/preview/uq-wimax/img/uq/title_product.png') no-repeat left center;
+  background-size: 20px;
+}
+
+section.qa .contents .relation li.area a h3 span {
+  background: url('/preview/uq-wimax/img/uq/title_area.png') no-repeat left center;
+  background-size: 20px;
+}
+
+
+section.qa .contents .relation p.view_btn {
+  display: none;
+  }
+
+/* mobile */
+
+#mobile_page section.qa .contents .qa_main {
+    border: 2px solid #e2007f;
+  }
+
+#mobile_page section.qa .contents .qa_main .title h2 {
+     color: #e2007f;
+     border-bottom: 1px solid #e2007f;
+   }
+
+#mobile_page section.qa .contents .qa_main .text div {
+     border-bottom: 1px dashed #e2007f;
+   }
+
+#mobile_page section.qa .contents .qa_main .text div:last-child {
+  border-bottom: none;
+}
+
+#mobile_page section.qa .text p.question {
+    background: url('/preview/uq-wimax/img/uq/qa_q_p.png') no-repeat left top;
+    background-size: 25px;
+  }
+
+#mobile_page section.qa .text p.answer {
+    background: url('/preview/uq-wimax/img/uq/qa_a_p.png') no-repeat left top;
+    background-size: 25px;
+  }
+
+#mobile_page section.qa .contents .qa_main p.more_btn a span {
+     background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_p_on.png') no-repeat 29% center;
+     background-size: 10px;
+     border: 1px solid #e2007f;
+     color: #e2007f;
+   }
+
+#mobile_page section.qa .contents .relation li.contents_section a {
+  background: #fff url('/preview/uq-wimax/img/uq/arrow_right_p.png') no-repeat 97% center;
+  background-size: 10px;
+  border: 1px solid #e2007f;
+}
+
+#mobile_page section.qa .contents .relation li.contents_section a h3 {
+  border-right: 1px dotted #e2007f;
+}
+
+#mobile_page section.qa .contents .relation li.speed a h3 span {
+  background: url('/preview/uq-wimax/img/uq/title_speed220m_p.png') no-repeat left center;
+  background-size: 20px;
+}
+
+#mobile_page section.qa .contents .relation li.price a h3 span {
+  background: url('/preview/uq-wimax/img/uq/title_price_p.png') no-repeat left center;
+  background-size: 20px;
+}
+
+#mobile_page section.qa .contents .relation li.product a h3 span {
+  background: url('/preview/uq-wimax/img/uq/title_product_p.png') no-repeat left center;
+  background-size: 20px;
+}
+
+#mobile_page section.qa .contents .relation li.area a h3 span {
+  background: url('/preview/uq-wimax/img/uq/title_area_p.png') no-repeat left center;
+  background-size: 20px;
+}
+
+#mobile_page section.qa .contents .relation p.title {
+  background: #e2007f;
+}
+
+  }

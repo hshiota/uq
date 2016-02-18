@@ -1,0 +1,1644 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+/* common start --------------------------------------------------------------------*/
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: font-family: "Hiragino Kaku Gothic W6 JIS2004";
+}
+
+#contents {
+background: #fff url('/preview/uq-wimax/img/uq/bg_g.png');
+}
+
+h1,h2,h3,p,li,a,span {
+  font-family: "Hiragino Kaku Gothic W6 JIS2004";
+}
+
+.webfont_w3,
+.tweet_list span,
+.tweet_list span a,
+.tweet_list_sp span,
+.tweet_list_sp span a,
+footer a,
+footer .copyright p,
+section.qa .qa_main span {
+  font-family: "Hiragino Kaku Gothic W3 JIS2004";
+}
+
+/* pc start */
+@media print,screen and (min-width:799px){
+
+section.sp_site {
+  display: none;
+}
+
+section.pc_site .pc_contents,
+footer .footer_contents {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+header {
+  height: 70px;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+header a {
+  width: 230px;
+  margin: 0 auto;
+  display: block;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #003399;
+}
+
+header p {
+  color: #003399;
+  font-size: 12px;
+}
+
+header ul,
+header p {
+  margin-top: 3px;
+}
+
+header ul li {
+  font-size: 14px;
+  color: #fff;
+  height: 15px;
+  width: 100px;
+  float: left;
+}
+
+header ul li.header_wimax {
+  background: #0099ff;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+header ul li.header_mobile {
+  background: #e3007f;
+  padding: 5px;
+}
+
+
+/* スライドバナー */
+.flickity-viewport {
+  height: 325px !important;
+}
+
+.flickity-viewport img {
+  height: 325px;
+  width: auto;
+}
+
+/* navi */
+
+ ul.page_switch {
+  width: 100%;
+  margin-top: 5px;
+  height: 58px;
+  border-bottom: 3px solid #0099ff;
+  font-size: 21px;
+}
+
+ ul.page_switch li a {
+  width: 49%;
+  height: 35px;
+  color: #fff;
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+}
+
+ ul.page_switch li.wimax_switch a {
+  background: #0099ff;
+  border: 3px solid #0099ff;
+  border-radius: 0px 5px 0px 0px;
+  float: left;
+}
+
+ ul.page_switch li.wimax_switch a span {
+  background: url('/preview/uq-wimax/img/uq/uqwimaxlogo.png') no-repeat left center;
+  background-size: 120px;
+  padding: 0px 0px 3px 120px;
+  }
+
+ ul.page_switch li.mobile_switch a {
+  border: 3px solid #e2007f;
+  background: #dcdcdc;
+  border-bottom: 0px;
+  float: right;
+  border-radius: 5px 0px 0px 0px;
+  color: #a7a7a7;
+}
+
+ ul.page_switch li.mobile_switch a span {
+  background: url('/preview/uq-wimax/img/uq/uqmobilelogo_off.png') no-repeat left center;
+  background-size: 120px;
+  padding: 0px 0px 3px 120px;
+}
+
+ nav#g-nav {
+  height: 53px;
+}
+
+ nav#g-nav ul.flipsnap {
+  width: 1000px;
+  background: #fff;
+  height: 50px;
+  margin: 0 auto;
+}
+
+ nav#g-nav ul.flipsnap li {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+ nav#g-nav ul.flipsnap a {
+  display: block;
+  height: 31px;
+  color: #0099ff;
+  padding-top: 19px;
+}
+
+ nav#g-nav ul.flipsnap a:hover {
+  height: 31px;
+  border-bottom: 3px solid #0099ff;
+}
+
+ nav#g-nav ul.flipsnap li#n_02 a span {
+  background: url('/preview/uq-wimax/img/uq/title_speed220m.png') no-repeat left center;
+  background-size: 18px;
+  padding: 10px 0px 10px 20px;
+}
+
+ nav#g-nav ul.flipsnap li#n_03 a span {
+  background: url('/preview/uq-wimax/img/uq/title_price.png') no-repeat left center;
+  background-size: 17px;
+  padding: 10px 0px 10px 20px;
+}
+
+ nav#g-nav ul.flipsnap li#n_04 a span {
+  background: url('/preview/uq-wimax/img/uq/title_product.png') no-repeat left center;
+  background-size: 18px;
+  padding: 10px 0px 10px 20px;
+}
+
+ nav#g-nav ul.flipsnap li#n_05 a span {
+  background: url('/preview/uq-wimax/img/uq/title_area.png') no-repeat left center;
+  background-size: 18px;
+  padding: 10px 0px 10px 20px;
+}
+
+ nav#g-nav ul.flipsnap li a.current {
+   border-bottom: 3px solid #0099ff;
+ }
+
+/* contents */
+#contents {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+#contents .pagetop {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#contents .pagetop a {
+  display: block;
+  font-size: 12px;
+  color: #494949;
+  padding: 10px;
+  background: #fff;
+}
+
+div.sub {
+  height: 45px;
+  padding: 15px 0px 30px;
+}
+
+div.sub .socialBtn {
+  width: 300px;
+  max-width: 300px;
+}
+
+div.sub .socialBtn ul {
+}
+
+div.sub .socialBtn ul li {
+  float: left;
+  padding: 7px 36px 0px 0px;
+}
+
+div.sub .socialBtn ul li:last-child {
+  padding-right: 0px;
+}
+
+div.sub .officialBtn ul li {
+  float: left;
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+div.sub .officialBtn ul li a {
+  width: 325px;
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+  background: #FFF;
+}
+
+div.sub .officialBtn ul li.wimax a {
+  border-bottom: 1px solid #0099ff;
+  color: #0099ff;
+}
+
+div.sub .officialBtn ul li.wimax a:hover,
+div.sub .officialBtn ul li.mobile a:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+div.sub .officialBtn ul li.wimax a span {
+  background: url('/preview/uq-wimax/img/uq/arrow_right_b.png') no-repeat left center;
+  background-size: 8px;
+  padding-left: 15px;
+}
+
+div.sub .officialBtn ul li.mobile a {
+  border-bottom: 1px solid #e2007f;
+  color: #e2007f;
+}
+
+div.sub .officialBtn ul li.mobile a span {
+  background: url('/preview/uq-wimax/img/uq/arrow_right_p.png') no-repeat left center;
+  background-size: 8px;
+  padding-left: 15px;
+}
+
+/* twitter */
+
+section.pc_site #twitter_timeline {
+  width: 300px;
+  float: left;
+}
+
+ section.pc_site #twitter_timeline .twitter_title {
+  background: url('/preview/uq-wimax/img/uq/tab_wimax_on.png') no-repeat left bottom;
+  padding: 0px 0px 20px 10px;
+}
+
+section.pc_site #twitter_timeline .twitter_title h2 {
+  padding-left: 30px;
+  background: url('/preview/uq-wimax/img/uq/wimax_twitter.png') no-repeat left center;
+  background-size: 25px;
+}
+
+section.pc_site #twitter_timeline .twitter_title span {
+  font-size: 12px;
+  line-height: 1.6em;
+  display: block;
+  font-weight: normal;
+}
+
+section.pc_site #twitter_timeline #tweet_list {
+  width: 260px;
+  height: 944px !important;
+  background: #fff;
+  margin-top: 10px;
+  padding: 0px 19px;
+  font-size: 13px;
+  line-height: 1.3em;
+  border-right: 1px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
+}
+
+section.pc_site #twitter_timeline #tweet_list ul li {
+  padding: 15px 0px !important;
+  border-bottom: 1px dashed #dcdcdc;
+  height: 205px;
+}
+
+section.pc_site #twitter_timeline #tweet_list ul li .img {
+  width: 48px;
+  float: left;
+}
+
+section.pc_site #twitter_timeline #tweet_list span {
+  display: block;
+  padding-top: 10px;
+}
+
+section.pc_site #twitter_timeline #tweet_list span.name {
+  padding-left: 55px;
+}
+
+section.pc_site #twitter_timeline #tweet_list span a {
+  display: block;
+  color: #a7a7a7;
+}
+
+ section.pc_site #twitter_timeline #tweet_list span.name a.user_name {
+  font-size: 14px;
+  color: #0099ff;
+}
+
+/* review */
+section.pc_site #review_timeline,
+section.pc_site #uqinfo_timeline {
+  width: 325px;
+  float: left;
+  padding-left: 25px;
+}
+
+ section.pc_site #review_timeline .review_title,
+ section.pc_site #uqinfo_timeline .uqinfo_title {
+  background: url('/preview/uq-wimax/img/uq/tab_wimax_on.png') no-repeat left bottom;
+  padding: 0px 0px 20px 10px;
+}
+
+ section.pc_site #review_timeline .review_title h2 {
+  padding-left: 27px;
+  background: url('/preview/uq-wimax/img/uq/wimax_blog_off.png') no-repeat left center;
+  background-size: 22px;
+}
+
+ section.pc_site #uqinfo_timeline .uqinfo_title h2 {
+  padding-left: 30px;
+  background: url('/preview/uq-wimax/img/uq/wimax_info_off.png') no-repeat left center;
+  background-size: 25px;
+}
+
+section.pc_site #review_timeline .review_title span,
+section.pc_site #uqinfo_timeline .uqinfo_title span {
+  font-size: 12px;
+  line-height: 1.6em;
+  display: block;
+  font-weight: normal;
+}
+
+section.pc_site #review_timeline .review_list,
+section.pc_site #uqinfo_timeline .info_list {
+  margin: 10px 0px;
+}
+
+ section.pc_site #review_timeline .review_list ul li,
+ section.pc_site #uqinfo_timeline .info_list ul li {
+  border: 1px solid #0099ff;
+  margin-bottom: 20px;
+}
+
+section.pc_site #review_timeline .review_list ul li a,
+section.pc_site #uqinfo_timeline .info_list ul li a {
+  display: block;
+  line-height: 1.5em;
+  font-size: 16px;
+  position: relative;
+  color: #000;
+}
+
+section.pc_site #review_timeline .review_list ul li a h3,
+section.pc_site #uqinfo_timeline .info_list ul li a h3 {
+  padding: 70px 34px;
+}
+
+ section.pc_site #review_timeline .review_list ul li a p,
+ section.pc_site #uqinfo_timeline .info_list ul li a p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 321px;
+  background: #0099ff;
+  text-align: center;
+  height: 35px;
+  padding-top: 10px;
+  border: 1px solid #fff;
+}
+
+ section.pc_site #review_timeline .review_list ul li a p span,
+ section.pc_site #uqinfo_timeline .info_list ul li a p span {
+  color: #fff;
+  background: url('/preview/uq-wimax/img/uq/arrow_view_b.png') no-repeat left center;
+  padding-left: 18px;
+}
+
+ section.pc_site #review_timeline .review_list ul li.speed a,
+ section.pc_site #uqinfo_timeline .info_list ul li.speed a {
+background: #fff url('/preview/uq-wimax/img/uq/title_speed220m.png') no-repeat center 10%;
+}
+
+ section.pc_site #review_timeline .review_list ul li.speed a:hover,
+ section.pc_site #uqinfo_timeline .info_list ul li.speed a:hover {
+background: #0099ff url('/preview/uq-wimax/img/uq/title_speed220m_w.png')no-repeat center 10%;
+color: #fff;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+ section.pc_site #review_timeline .review_list ul li.price a,
+ section.pc_site #uqinfo_timeline .info_list ul li.price a {
+background: #fff url('/preview/uq-wimax/img/uq/title_price.png') no-repeat center 10%;
+background-size: 38px;
+}
+
+ section.pc_site #review_timeline .review_list ul li.price a:hover,
+ section.pc_site #uqinfo_timeline .info_list ul li.price a:hover {
+background: #0099ff url('/preview/uq-wimax/img/uq/title_price_w.png') no-repeat center 10%;
+color: #fff;
+background-size: 38px;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+ section.pc_site #review_timeline .review_list ul li.product a,
+ section.pc_site #uqinfo_timeline .info_list ul li.product a {
+background: #fff url('/preview/uq-wimax/img/uq/title_product.png') no-repeat center 10%;
+background-size: 38px;
+}
+
+ section.pc_site #review_timeline .review_list ul li.product a:hover,
+ section.pc_site #uqinfo_timeline .info_list ul li.product a:hover {
+background: #0099ff url('/preview/uq-wimax/img/uq/title_product_w.png') no-repeat center 10%;
+color: #fff;
+background-size: 38px;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+ section.pc_site #review_timeline .review_list ul li.area a,
+ section.pc_site #uqinfo_timeline .info_list ul li.area a {
+background: #fff url('/preview/uq-wimax/img/uq/title_area.png') no-repeat center 10%;
+background-size: 38px;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+ section.pc_site #review_timeline .review_list ul li.area a:hover,
+ section.pc_site #uqinfo_timeline .info_list ul li.area a:hover {
+background: #0099ff url('/preview/uq-wimax/img/uq/title_area_w.png') no-repeat center 10%;
+color: #fff;
+background-size: 38px;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+section.pc_site .paging {
+  width: 675px;
+  float: right;
+  margin-top: 30px;
+}
+
+section.pc_site .paging ul {
+  width: 305px;
+  margin: 0 auto;
+  height: 35px;
+}
+
+ section.pc_site .paging li {
+  float: left;
+  text-align: center;
+  border: 1px solid #0099ff;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 18px;
+  background: #fff;
+}
+
+section.pc_site .paging li:last-child {
+  margin-right: 0px;
+}
+
+ section.pc_site .paging li a,
+ section.pc_site .paging li span em {
+  display: block;
+  width: 33px;
+  height: 26px;
+  padding-top: 7px;
+  color: #0099ff;
+}
+
+ section.pc_site .paging li.disabled span {
+    color: #FFFFFF;
+    background-color: #DDDDDD;
+    display: block;
+    height: 26px;
+    padding-top: 7px;
+    width: 33px;
+}
+
+ section.pc_site .paging li span em {
+  background: #0099ff;
+  color: #fff !important;
+}
+
+ section.pc_site .paging li.prev,
+ section.pc_site .paging li.next {
+  border: 1px solid #e8e8e8 !important;
+  background: #e8e8e8;
+}
+
+ section.pc_site .paging li.prev a,
+ section.pc_site .paging li.next a {
+  color: #494949 !important;
+}
+
+/* mobile */
+
+#mobile_page ul.page_switch {
+  border-bottom: 3px solid #e2007f;
+}
+
+#mobile_page ul.page_switch li.wimax_switch a {
+  background: #dcdcdc;
+  color: #a7a7a7;
+  border-bottom: none;
+}
+
+#mobile_page ul.page_switch li.wimax_switch a span {
+  background: url('/preview/uq-wimax/img/uq/uqwimaxlogo_off.png') no-repeat left center;
+  background-size: 120px;
+}
+
+#mobile_page ul.page_switch li.mobile_switch a {
+  background: #e2007f;
+  color: #fff;
+}
+
+#mobile_page nav#g-nav ul.flipsnap li a.current {
+   border-bottom: 3px solid #e2007f;
+ }
+
+#mobile_page nav#g-nav ul.flipsnap a:hover {
+  height: 31px;
+  border-bottom: 3px solid #e2007f;
+}
+
+#mobile_page ul.page_switch li.mobile_switch a span {
+  background: url('/preview/uq-wimax/img/uq/uqmobilelogo.png') no-repeat left center;
+  background-size: 110px;
+}
+
+#mobile_page nav#g-nav ul.flipsnap li#n_02 a span {
+  background: url('/preview/uq-wimax/img/uq/title_speed220m_p.png') no-repeat left center;
+  background-size: 18px;
+  padding: 5px 0px 5px 20px;
+}
+
+#mobile_page nav#g-nav ul.flipsnap li#n_03 a span {
+  background: url('/preview/uq-wimax/img/uq/title_price_p.png') no-repeat left center;
+  background-size: 15px;
+  padding: 5px 0px 5px 20px;
+}
+
+#mobile_page nav#g-nav ul.flipsnap li#n_04 a span {
+  background: url('/preview/uq-wimax/img/uq/title_product_p.png') no-repeat left center;
+  background-size: 15px;
+  padding: 5px 0px 5px 20px;
+}
+
+#mobile_page nav#g-nav ul.flipsnap li#n_05 a span {
+  background: url('/preview/uq-wimax/img/uq/title_area_p.png') no-repeat left center;
+  background-size: 15px;
+  padding: 5px 0px 5px 20px;
+}
+
+#mobile_page section.pc_site #twitter_timeline .twitter_title {
+  background:url('/preview/uq-wimax/img/uq/tab_mobile_on.png') no-repeat left bottom;
+}
+
+#mobile_page section.pc_site #review_timeline .review_title,
+#mobile_page section.pc_site #uqinfo_timeline .uqinfo_title {
+  background:url('/preview/uq-wimax/img/uq/tab_mobile_on.png') no-repeat left bottom;
+}
+
+#mobile_page section.pc_site #twitter_timeline .tweet_list span.name a.user_name,
+#mobile_page section.pc_site .paging li a,
+#mobile_page section.pc_site .paging li span em,
+#mobile_page nav#g-nav ul.flipsnap a {
+  color: #e2007f;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li {
+  border: 1px solid #e2007f;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li a p,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li a p,
+#mobile_page section.pc_site .paging li span em {
+  background: #e2007f;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li a p span,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li a p span {
+  background: url('/preview/uq-wimax/img/uq/arrow_morebtn_p.png') no-repeat left center;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li.speed a,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li.speed a {
+background: #fff url('/preview/uq-wimax/img/uq/title_speed220m_p.png') no-repeat center 10%;
+background-size: 40px;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li.speed a:hover,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li.speed a:hover {
+background: #e2007f url('/preview/uq-wimax/img/uq/title_speed220m_w.png')no-repeat center 10%;
+color: #fff;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li.price a,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li.price a {
+background: #fff url('/preview/uq-wimax/img/uq/title_price_p.png') no-repeat center 10%;
+background-size: 38px;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li.price a:hover,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li.price a:hover {
+background: #e2007f url('/preview/uq-wimax/img/uq/title_price_w.png') no-repeat center 10%;
+color: #fff;
+background-size: 38px;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li.product a,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li.product a {
+background: #fff url('/preview/uq-wimax/img/uq/title_product_p.png') no-repeat center 10%;
+background-size: 38px;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li.product a:hover,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li.product a:hover {
+background: #e2007f url('/preview/uq-wimax/img/uq/title_product_w.png') no-repeat center 10%;
+color: #fff;
+background-size: 38px;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li.area a,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li.area a {
+background: #fff url('/preview/uq-wimax/img/uq/title_area_p.png') no-repeat center 10%;
+background-size: 38px;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+#mobile_page section.pc_site #review_timeline .review_list ul li.area a:hover,
+#mobile_page section.pc_site #uqinfo_timeline .info_list ul li.area a:hover {
+background: #e2007f url('/preview/uq-wimax/img/uq/title_area_w.png') no-repeat center 10%;
+color: #fff;
+background-size: 38px;
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+}
+
+#mobile_page section.pc_site .paging li {
+  border: 1px solid #e2007f;
+}
+
+
+/* footer */
+footer {
+  padding: 50px 0px;
+}
+
+footer .footer_contents .footer_sp,
+footer .pagetop_sp {
+  display: none;
+}
+
+footer ul {
+  line-height: 1.4em;
+}
+
+footer .footer_contents .footer_wimax,
+footer .footer_contents .footer_mobile {
+  width: 240px;
+  padding-right: 10px;
+  float: left;
+  margin-top: 50px;
+  height: 130px;
+}
+
+footer .footer_contents .footer_wimax p,
+footer .footer_contents .footer_mobile p {
+  background: #f4f4f4;
+  padding: 5px 0px;
+  font-size: 14px;
+  color: #494949;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer .footer_contents .footer_wimax li a,
+footer .footer_contents .footer_mobile li a,
+footer .footer_contents ul.menuList li a {
+  font-size: 13px;
+  color: #494949;
+  line-height: 1.3em;
+}
+
+footer .footer_contents .footer_wimax ul li a:hover,
+footer .footer_contents .footer_mobile ul li a:hover,
+footer .footer_contents ul.menuList a:hover {
+  color: #003399;
+}
+
+footer .footer_contents .footer_wimax p span {
+  background: url('/preview/uq-wimax/img/uq/uq_footerlogo.png')no-repeat left center;
+  background-size: 63px;
+  padding-left: 63px;
+}
+
+footer .footer_contents .footer_mobile p span {
+  background: url('/preview/uq-wimax/img/uq/mobile_footerlogo.png')no-repeat left center;
+  background-size: 63px;
+  padding-left: 63px;
+}
+
+footer .footer_contents .footer_wimax ul.wimaxlink_kuchikomi li,
+footer .footer_contents .footer_mobile ul.wimaxlink_kuchikomi li {
+  width: 48px;
+  float: left;
+}
+
+footer .footer_contents ul.menuList {
+  margin-bottom: 10px;
+}
+
+footer .footer_contents ul.menuList li {
+  float: left;
+  padding-right: 10px;
+  border-right: 1px solid #494949;
+  }
+
+footer .footer_contents ul.menuList li:last-child {
+  border-right: 0px;
+  padding-left: 10px;
+}
+
+footer .footer_contents .copyright p {
+  font-size: 11px;
+}
+
+footer .footer_pc ul li {
+  width: 480px;
+  float: left;
+  padding-right: 20px;
+}
+
+footer .footer_pc ul li:last-child {
+  padding-right: 0px;
+}
+
+footer .footer_pc ul li p {
+  text-align: center;
+  font-size: 14px;
+  color: #494949;
+  padding-bottom: 20px;
+}
+
+
+}
+
+/* pc end */
+
+
+
+/* sp start */
+@media print,screen and (max-width:800px){
+
+body {
+  width: 100%;
+}
+
+section.sp_site {
+  padding-top: 25px;
+}
+
+section.sp_site .sp_contents {
+  margin: 0px 10px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 14px;
+  color: #000;
+  font-family: "ヒラギノ角ゴ ProN W6";
+  line-height: 1.3em;
+}
+
+section.sp_site .paging {
+  width: 296px;
+  margin: 0 auto;
+  padding: 25px 0px;
+}
+
+ section.sp_site .paging ul li {
+  float: left;
+  padding-right: 10px;
+  color: #0099ff;
+}
+
+section.sp_site .paging ul li:last-child {
+  padding-right: 0px;
+}
+
+ section.sp_site .paging ul li.prev a,
+ section.sp_site .paging ul li.next a {
+  width: 50px;
+  padding-top: 7px;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  color: #494949;
+}
+
+ section.sp_site .paging ul li a,
+ section.sp_site .paging ul li span {
+  display: block;
+  width: 35px;
+  height: 25px;
+  text-align: center;
+  border: 1px solid #0099ff;
+  border-radius: 3px;
+  padding-top: 8px;
+  color: #0099ff;
+}
+
+section.sp_site .paging ul li a {
+  background: #fff;
+}
+
+ section.sp_site .paging ul li span {
+  background: #0099ff;
+  color: #fff;
+}
+
+section.sp_site .paging ul li.jump {
+  padding-top: 10px;
+}
+
+/* header */
+header {
+  background: #fff;
+  height: 60px;
+  text-align: center;
+  line-height: 1.2em;
+  padding: 5px 0px;
+}
+
+header p {
+  font-size: 10px;
+}
+
+header a {
+  color: #003399;
+}
+
+header ul {
+  margin: 0 auto;
+  width: 155px;
+  font-size: 12px;
+}
+
+header li.header_wimax,
+header li.header_mobile {
+  padding: 1px;
+  width: 70px;
+  color: #fff;
+}
+
+header ul .header_wimax {
+  background: #0099ff;
+  float: left;
+}
+
+header ul .header_mobile {
+  background: #e3007f;
+  float: right;
+}
+
+/* スライドバナー */
+.gallery .gallery-cell {
+  width: 100%;
+}
+
+.gallery .gallery-cell img {
+  width: 100%;
+}
+
+.flickity-page-dots {
+  bottom: 5px !important;
+}
+
+/* navi*/
+
+ ul.page_switch {
+  width: 100%;
+  margin: 5px 0px 10px;
+  height: 48px;
+  border-bottom: 3px solid #0099ff;
+}
+
+ul.page_switch li a {
+  width: 47%;
+  height: 30px;
+  color: #fff;
+  padding-top: 15px;
+  display: block;
+  text-align: center;
+}
+
+ ul.page_switch li.wimax_switch a {
+  background: #0099ff;
+  border: 3px solid #0099ff;
+  border-radius: 0px 5px 0px 0px;
+  float: left;
+}
+
+ ul.page_switch li.wimax_switch a span {
+  background: url('/preview/uq-wimax/img/uq/uq_tablogo_sp.png') no-repeat left center;
+  background-size: 42px;
+  padding: 5px 0px 5px 40px;
+  }
+
+ ul.page_switch li.mobile_switch a {
+  border: 3px solid #e2007f;
+  background: #dcdcdc;
+  border-bottom: 0px;
+  float: right;
+  border-radius: 5px 0px 0px 0px;
+  color: #a7a7a7;
+}
+
+ ul.page_switch li.mobile_switch a span {
+  background: url('/preview/uq-wimax/img/uq/uqm_tablogo_g_sp.png') no-repeat left center;
+  background-size: 38px;
+  padding: 5px 0px 5px 40px;
+}
+
+ nav#g-nav {
+  width: 100%;
+  clear: left;
+  height: 60px;
+  border-top: 1px solid #0099ff;
+  border-bottom: 1px solid #0099ff;
+}
+
+ nav#g-nav .flipsnap .item a {
+  width: 19%;
+  height: 35px;
+  display: block;
+  float: left;
+  font-size: 13px;
+  text-align: center;
+  border-right: 1px solid #0099ff;
+  color: #0099ff;
+  padding: 25px 1px 0px;
+}
+
+ nav#g-nav .flipsnap li#n_02 a span {
+  background: url('/preview/uq-wimax/img/uq/title_speed220m.png') no-repeat left center;
+  background-size: 15px;
+  padding: 7px 0px 7px 17px;
+}
+
+ nav#g-nav .flipsnap li#n_03 a span {
+  background: url('/preview/uq-wimax/img/uq/title_price.png') no-repeat left center;
+  background-size: 15px;
+  padding: 7px 0px 7px 15px;
+}
+
+ nav#g-nav .flipsnap li#n_04 a span {
+  background: url('/preview/uq-wimax/img/uq/title_product.png') no-repeat left center;
+  background-size: 15px;
+  padding: 7px 0px 7px 15px;
+}
+
+ nav#g-nav .flipsnap li#n_05 a span {
+  background: url('/preview/uq-wimax/img/uq/title_area.png') no-repeat left center;
+  background-size: 13px;
+  padding: 7px 0px 7px 15px;
+}
+
+ nav#g-nav .flipsnap li#n_02 a.current span {
+  background: url('/preview/uq-wimax/img/uq/title_speed220m_w.png') no-repeat left center;
+  background-size: 15px;
+  padding: 7px 0px 7px 17px;
+}
+
+ nav#g-nav .flipsnap li#n_03 a.current span {
+  background: url('/preview/uq-wimax/img/uq/title_price_w.png') no-repeat left center;
+  background-size: 15px;
+  padding: 7px 0px 7px 15px;
+}
+
+ nav#g-nav .flipsnap li#n_04 a.current span {
+  background: url('/preview/uq-wimax/img/uq/title_product_w.png') no-repeat left center;
+  background-size: 15px;
+  padding: 7px 0px 7px 15px;
+}
+
+ nav#g-nav .flipsnap li#n_05 a.current span {
+  background: url('/preview/uq-wimax/img/uq/title_area_w.png') no-repeat left center;
+  background-size: 13px;
+  padding: 7px 0px 7px 15px;
+}
+
+ nav#g-nav .flipsnap li a.current {
+  background: #0099ff;
+  color: #fff;
+}
+
+nav#g-nav .flipsnap li#n_05 a,
+#mobile_page nav#g-nav .flipsnap li#n_05 a {
+  border-right: none;
+}
+
+.hide {
+  display: none;
+}
+
+section.pc_site,
+.sub {
+  display: none;
+}
+
+section.sp_site .sp_kuchikomi ul li {
+  float: left;
+  width: 33%;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+ section.sp_site .sp_kuchikomi ul li {
+  background: url('/preview/uq-wimax/img/uq/tab_wimax_off.png') no-repeat center bottom;
+  background-size: 100px;
+}
+
+ section.sp_site .sp_kuchikomi ul li.select {
+  background: url('/preview/uq-wimax/img/uq/tab_wimax_on.png') no-repeat center bottom;
+  background-size: 100px;
+}
+
+section.sp_site .sp_kuchikomi ul li {
+  padding-bottom: 15px;
+}
+
+ section.sp_site .sp_kuchikomi ul li span.twitter {
+  background: url('/preview/uq-wimax/img/uq/wimax_twitter.png') no-repeat 15px center;
+  background-size: 20px;
+  padding-left: 40px;
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+}
+
+ section.sp_site .sp_kuchikomi ul li.select span.twitter {
+  color: #0099ff;
+}
+
+ section.sp_site .sp_kuchikomi ul li span.blog {
+  background: url('/preview/uq-wimax/img/uq/wimax_blog_off.png') no-repeat 5px center;
+  background-size: 20px;
+  padding-left: 30px;
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+}
+
+ section.sp_site .sp_kuchikomi ul li.select span.blog {
+  color: #0099ff;
+  background: url('/preview/uq-wimax/img/uq/wimax_blog_on.png') no-repeat 5px center;
+  background-size: 20px;
+}
+
+ section.sp_site .sp_kuchikomi ul li span.uq_info {
+  background: url('/preview/uq-wimax/img/uq/wimax_info_off.png') no-repeat 11px center;
+  background-size: 20px;
+  padding-left: 40px;
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+}
+
+ section.sp_site .sp_kuchikomi ul li.select span.uq_info {
+  color: #0099ff;
+  background: url('/preview/uq-wimax/img/uq/wimax_info_on.png') no-repeat 11px center;
+  background-size: 20px;
+}
+
+/* twitter page */
+ section.sp_site .tweet_page .tweet_list,
+ section.sp_site .tweet_page .tweet_list {
+   height: 900px !important;
+ }
+
+ section.sp_site .tweet_page a {
+  color: #0099ff;
+}
+
+section.sp_site .tweet_page  {
+  background: #fff;
+  margin: 10px 0px;
+}
+
+section.sp_site .tweet_page li.tweet_item {
+  height: 184px !important;
+  border-bottom: 1px dashed #494949;
+  padding: 20px 0px !important;
+}
+
+
+section.sp_site .tweet_page span {
+  display: block;
+}
+
+section.sp_site .tweet_page span.user a {
+  float: left;
+}
+
+section.sp_site .tweet_page span.user a img {
+  padding-right: 10px;
+}
+
+section.sp_site .tweet_page span.user a.user_name {
+  font-size: 14px;
+  width: 86%;
+}
+
+section.sp_site .tweet_page span.user a.screen_name {
+  font-size: 12px;
+  width: 86%;
+}
+
+section.sp_site .tweet_page span {
+  font-size: 14px;
+  line-height: 1.2em;
+  padding-bottom: 5px;
+}
+
+section.sp_site .tweet_page span .screen_name,
+section.sp_site .tweet_page span.date {
+  color: #a7a7a7;
+}
+
+section.sp_site .tweet_page span.date a {
+  color: #a7a7a7 !important;
+}
+
+section.sp_site .tweet_page .tools span {
+  float: left;
+  padding-right: 10px;
+}
+
+/* blog page */
+/* info page */
+
+section.sp_site .users_blogs,
+section.sp_site .wimax_infopage {
+  margin: 10px 0px;
+}
+
+.users_blogs .article,
+.wimax_infopage .article {
+  margin-bottom: 10px;
+}
+
+ .users_blogs .article a,
+ .wimax_infopage .article a {
+  display: block;
+  background: #fff url('/preview/uq-wimax/img/uq/arrow_right_b.png') no-repeat 97% center;
+  background-size: 10px;
+  border: 1px solid #0099ff;
+  padding-right: 34px;
+}
+
+ .users_blogs .article h3,
+ .wimax_infopage .article h3 {
+  border-right: 1px dotted #0099ff;
+  padding: 15px 10px;
+}
+
+.users_blogs .article h3 span,
+.wimax_infopage .article h3 span {
+  display: block;
+  padding: 5px 0px 5px 25px;
+}
+
+ .users_blogs .article h3.area span,
+ .wimax_infopage .article h3.area span {
+  background: url('/preview/uq-wimax/img/uq/title_area.png') no-repeat left center;
+  background-size: 20px;
+}
+
+ .users_blogs .article h3.speed span,
+ .wimax_infopage .article h3.speed span {
+  background: url('/preview/uq-wimax/img/uq/title_speed220m.png') no-repeat left center;
+  background-size: 20px;
+}
+
+ .users_blogs .article h3.price span,
+ .wimax_infopage .article h3.price span {
+  background: url('/preview/uq-wimax/img/uq/title_price.png') no-repeat left center;
+  background-size: 20px;
+}
+
+ .users_blogs .article h3.product span,
+ .wimax_infopage .article h3.product span {
+  background: url('/preview/uq-wimax/img/uq/title_product.png') no-repeat left center;
+  background-size: 20px;
+}
+
+/* mobile */
+#mobile_page ul.page_switch li.wimax_switch a {
+  background: #dcdcdc;
+  color: #a7a7a7;
+  border-bottom: none;
+}
+
+#mobile_page ul.page_switch {
+  border-bottom: 3px solid #e2007f;
+}
+
+#mobile_page ul.page_switch li.wimax_switch a span {
+  background:url('/preview/uq-wimax/img/uq/uq_tablogo_g_sp.png') no-repeat left center;
+  background-size: 42px;
+}
+
+#mobile_page ul.page_switch li.mobile_switch a {
+  color: #fff;
+  background: #e2007f;
+}
+
+#mobile_page ul.page_switch li.mobile_switch a span {
+  background:url('/preview/uq-wimax/img/uq/uqm_tablogo_sp.png') no-repeat left center;
+  background-size: 38px;
+}
+
+#mobile_page nav#g-nav {
+  border-top: 1px solid #e2007f;
+  border-bottom: 1px solid #e2007f;
+}
+
+#mobile_page nav#g-nav .flipsnap li a.current,
+#mobile_page section.sp_site .paging ul li span {
+  background: #e2007f;
+  color: #fff !important;
+}
+
+#mobile_page nav#g-nav .flipsnap .item a {
+  border-right: 1px solid #e2007f;
+  color: #e2007f;
+  position: relative
+}
+
+#mobile_page nav#g-nav .flipsnap span {
+  padding: 7px 0px 7px 15px;
+}
+
+#mobile_page nav#g-nav .flipsnap li#n_02 a span {
+  background: url('/preview/uq-wimax/img/uq/title_speed220m_p.png') no-repeat left center;
+  background-size: 15px;
+  position: absolute;
+  display: block;
+  text-align: left;
+  top: 12px;
+  left: 5px;
+  width: 45px;
+}
+
+#mobile_page nav#g-nav .flipsnap li#n_03 a span {
+  background: url('/preview/uq-wimax/img/uq/title_price_p.png') no-repeat left center;
+  background-size: 15px;
+}
+
+#mobile_page nav#g-nav .flipsnap li#n_04 a span{
+  background: url('/preview/uq-wimax/img/uq/title_product_p.png') no-repeat left center;
+  background-size: 15px;
+  }
+
+#mobile_page nav#g-nav .flipsnap li#n_05 a span {
+  background: url('/preview/uq-wimax/img/uq/title_area_p.png') no-repeat left center;
+  background-size: 14px;
+}
+
+#mobile_page nav#g-nav .flipsnap li#n_02 a.current span {
+  background: url('/preview/uq-wimax/img/uq/title_speed220m_w.png') no-repeat left center;
+  background-size: 15px;
+  position: absolute;
+  display: block;
+  text-align: left;
+  top: 12px;
+  left: 3px;
+}
+
+#mobile_page nav#g-nav .flipsnap li#n_03 a.current span {
+  background: url('/preview/uq-wimax/img/uq/title_price_w.png') no-repeat left center;
+  background-size: 15px;
+}
+
+#mobile_page nav#g-nav .flipsnap li#n_04 a.current span{
+  background: url('/preview/uq-wimax/img/uq/title_product_w.png') no-repeat left center;
+  background-size: 15px;
+  }
+
+#mobile_page nav#g-nav .flipsnap li#n_05 a.current span {
+  background: url('/preview/uq-wimax/img/uq/title_area_w.png') no-repeat left center;
+  background-size: 14px;
+}
+
+#mobile_page section.sp_site .sp_kuchikomi ul li {
+  background: url('/preview/uq-wimax/img/uq/tab_mobile_off.png') no-repeat center bottom;
+  background-size: 100px;
+}
+
+#mobile_page section.sp_site .sp_kuchikomi ul li.select {
+  background: url('/preview/uq-wimax/img/uq/tab_mobile_on.png') no-repeat center bottom;
+  background-size: 100px;
+}
+
+#mobile_page section.sp_site .sp_kuchikomi ul li.select span,
+#mobile_page section.sp_site .paging ul li,
+#mobile_page section.sp_site .tweet_page a {
+  color: #e2007f;
+}
+
+#mobile_page section.sp_site .sp_kuchikomi ul li.select span.uq_info {
+  background:url('/preview/uq-wimax/img/uq/mobile_info_on.png') no-repeat 11px center;
+  background-size: 20px;
+}
+
+#mobile_page section.sp_site .sp_kuchikomi ul li.select span.blog {
+  background:url('/preview/uq-wimax/img/uq/mobile_blog_on.png') no-repeat 5px center;
+  background-size: 20px;
+}
+
+#mobile_page .users_blogs .article a,
+#mobile_page .wimax_infopage .article a {
+  background: #fff url('/preview/uq-wimax/img/uq/arrow_right_p.png') no-repeat 97% center;
+  background-size: 10px;
+  border: 1px solid #e2007f;
+}
+
+#mobile_page .users_blogs .article h3,
+#mobile_page .wimax_infopage .article h3 {
+  border-right: 1px dotted #e2007f;
+}
+
+#mobile_page .users_blogs .article h3.area span,
+#mobile_page .wimax_infopage .article h3.area span {
+  background: url('/preview/uq-wimax/img/uq/title_area_p.png') no-repeat left center;
+  background-size: 20px;
+}
+
+#mobile_page .users_blogs .article h3.speed span,
+#mobile_page .wimax_infopage .article h3.speed span {
+  background: url('/preview/uq-wimax/img/uq/title_speed220m_p.png') no-repeat left center;
+  background-size: 20px;
+}
+
+#mobile_page .users_blogs .article h3.price span,
+#mobile_page .wimax_infopage .article h3.price span {
+  background: url('/preview/uq-wimax/img/uq/title_price_p.png') no-repeat left center;
+  background-size: 20px;
+}
+
+#mobile_page .users_blogs .article h3.product span,
+#mobile_page .wimax_infopage .article h3.product span {
+  background: url('/preview/uq-wimax/img/uq/title_product_p.png') no-repeat left center;
+  background-size: 20px;
+}
+
+#mobile_page section.sp_site .paging ul li a,
+#mobile_page section.sp_site .paging ul li span {
+  border: 1px solid #e2007f;
+  color: #e2007f;
+}
+
+#mobile_page section.sp_site .paging ul li.prev a,
+#mobile_page section.sp_site .paging ul li.next a {
+  border: 1px solid #e8e8e8;
+  color: #494949;
+}
+
+/* footer */
+footer {
+  background: #fff;
+  padding: 25px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+footer li {
+  line-height: 1.4em;
+}
+
+footer p,
+footer li a {
+  color: #494949;
+  font-size: 14px;
+}
+
+footer ul.wimaxlink_kuchikomi,
+footer ul.menuList {
+  width: 325px;
+  margin: 0 auto;
+}
+
+footer ul.wimaxlink_kuchikomi a {
+  display: block;
+  width: 64px;
+}
+
+footer ul.wimaxlink_kuchikomi li,
+footer ul.menuList li {
+  border-right: 1px solid #494949;
+}
+
+footer ul.wimaxlink_kuchikomi li:last-child,
+footer ul.menuList li:last-child {
+  border-right: 0px;
+}
+
+footer ul.clearfix li {
+  float: left;
+}
+
+footer li.footer_twitter_sp,
+footer li.footer_facebook_sp {
+  width: 50px;
+  float: left;
+}
+
+footer li.footer_twitter_sp {
+  margin-right: 10px;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer ul.footer_sp_acc {
+  width: 120px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 20px 0px 10px;
+}
+
+footer p:first-child {
+  margin: 0px 0px 10px;
+}
+
+footer ul.menuList {
+  padding: 20px 0px;
+}
+
+footer ul.menuList a {
+  width: 160px;
+  display: block;
+}
+
+footer .copyright p {
+  padding: 0px 10px;
+}
+
+footer .footer_wimax,
+footer .footer_mobile {
+  margin-top: 10px;
+}
+
+footer .footer_wimax p,
+footer .footer_mobile p {
+  background: #f4f4f4;
+  height: 10px;
+  padding: 10px;
+  }
+
+footer .footer_wimax p span {
+  background: url('/preview/uq-wimax/img/uq/uq_footerlogo.png')no-repeat left center;
+  background-size: 75px;
+  padding-left: 77px;
+}
+
+footer .footer_mobile p span {
+  background: url('/preview/uq-wimax/img/uq/mobile_footerlogo.png')no-repeat left center;
+  background-size: 73px;
+  padding-left: 77px;
+}
+
+footer .pagetop_sp {
+  width: 30px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+footer .pagetop_sp img {
+  width: 30px;
+  height: auto;
+}
+
+footer .footer_pc,
+.pagetop {
+  display: none;
+}
+
+}
+/* sp end */

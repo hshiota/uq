@@ -31,7 +31,9 @@
 		<script src="http://typesquare.com/accessor/apiscript/typesquare.js?Bh6KwcXf0GA%3D" type="text/javascript" charset="UTF-8"></script>
 		<script type="text/javascript">{literal}
 			$(function() {
-				$('.experience_ticker').vTicker();
+//				setTimeout(function(){
+//					$('.experience_ticker').vTicker();
+//				},5000);
 			});
 		{/literal}</script>
 
@@ -565,18 +567,6 @@
 											</li>
 										{elseif $view->params.plugin_url == 'wimax_product'}
 											<li class="contents_section product">
-												<a href="{base_url}/wimax_product_qa/#pro_qa1">
-													<h3>【Q&A】WX02でWi-Fiがよく切れる、通信速度が出ない時の対処法はありますか？</h3>
-													<p class="view_btn"><span>view</span></p>
-												</a>
-											</li>
-											<li class="contents_section product">
-												<a href="{base_url}/wimax_product_qa/#pro_qa2">
-													<h3>【Q&A】W01でWi-Fiがよく切れる、通信速度が出ない時の対処法はありますか？</h3>
-													<p class="view_btn"><span>view</span></p>
-												</a>
-											</li>
-											<li class="contents_section product">
 												<a href="{base_url}/wimax_product_info_01">
 													<h3>【便利な使い方】WX02のバッテリーを長く持たせたい</h3>
 													<p class="view_btn"><span>view</span></p>
@@ -585,6 +575,18 @@
 											<li class="contents_section product">
 												<a href="{base_url}/wimax_product_info_02">
 													<h3>【便利な使い方】W01のバッテリーを長く持たせたい</h3>
+													<p class="view_btn"><span>view</span></p>
+												</a>
+											</li>
+											<li class="contents_section product">
+												<a href="{base_url}/wimax_product_qa/#pro_qa1">
+													<h3>【Q&A】WX02でWi-Fiがよく切れる、通信速度が出ない時の対処法はありますか？</h3>
+													<p class="view_btn"><span>view</span></p>
+												</a>
+											</li>
+											<li class="contents_section product">
+												<a href="{base_url}/wimax_product_qa/#pro_qa2">
+													<h3>【Q&A】W01でWi-Fiがよく切れる、通信速度が出ない時の対処法はありますか？</h3>
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
@@ -747,7 +749,7 @@
 						</div><!-- /#uqinfo_timeline -->
 						<!-- /pc_uqinfo -->
 
-					<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" }</div>
+					<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" }</div>
 
 					</div><!-- /pc_contents -->
 				</section>
