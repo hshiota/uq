@@ -33,7 +33,7 @@
 			$(function() {
 				setTimeout(function(){
 					$('.experience_ticker').vTicker();
-				},5000);
+				},1000);
 			});
 		{/literal}</script>
 
@@ -141,7 +141,7 @@
 										</a>
 									</li>
 								{/foreach}
-								<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" }</div>
+								<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" defaultPageCountSize="0" }</div>
 							</ul>
 						</div><!-- /users_blogs -->
 
@@ -397,7 +397,7 @@
 										</li>
 									{/if}
 								{* SP版QAエリア↑ *}
-								<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" }</div>
+								<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" defaultPageCountSize="0" }</div>
 							</ul>
 
 						</div><!-- /uq_info -->
@@ -749,7 +749,7 @@
 						</div><!-- /#uqinfo_timeline -->
 						<!-- /pc_uqinfo -->
 
-					<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" }</div>
+					<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" defaultPageCountSize="1" }</div>
 
 					</div><!-- /pc_contents -->
 				</section>

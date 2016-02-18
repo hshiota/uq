@@ -1,1 +1,1 @@
-git pull origin develop && git add tpl/*.tpl && git commit -m"$1" && git push origin develop
+git pull origin develop && git add tpl/*.tpl && git add controller/*.php && git add js/*.js && git add css/*.css && git commit -m"$1" && git push origin develop
