@@ -97,13 +97,13 @@
 			<nav id="g-nav">
 				<ul class="flipsnap">
 					{if $view->params.plugin_url|mb_strpos:'wimax' !== FALSE}
-						<li id="n_01" class="item"><a href="{base_url}/"{if $view->params.plugin_url == 'wimax'} class="current"{/if}>全て</a></li>
+						<li id="n_01" class="item"><a href="{base_url}/wimax"{if $view->params.plugin_url == 'wimax'} class="current"{/if}>全て</a></li>
 						<li id="n_02" class="item"><a href="{base_url}/wimax_speed/"{if $view->params.plugin_url == 'wimax_speed'} class="current"{/if}><span>速度</span></a></li>
 						<li id="n_03" class="item"><a href="{base_url}/wimax_price"{if $view->params.plugin_url == 'wimax_price'} class="current"{/if}><span>料金</span></a></li>
 						<li id="n_04" class="item"><a href="{base_url}/wimax_product"{if $view->params.plugin_url == 'wimax_product'} class="current"{/if}><span>製品</span></a></li>
 						<li id="n_05" class="item"><a href="{base_url}/wimax_area"{if $view->params.plugin_url == 'wimax_area'} class="current"{/if}><span>エリア</span></a></li>
 					{else}
-						<li id="n_01" class="item"><a href="{base_url}/"{if $view->params.plugin_url == 'mobile'} class="current"{/if}>全て</a></li>
+						<li id="n_01" class="item"><a href="{base_url}/mobile"{if $view->params.plugin_url == 'mobile'} class="current"{/if}>全て</a></li>
 						<li id="n_02" class="item"><a href="{base_url}/mobile_speed/"{if $view->params.plugin_url == 'mobile_speed'} class="current"{/if}><span>速度/安定さ</span></a></li>
 						<li id="n_03" class="item"><a href="{base_url}/mobile_price"{if $view->params.plugin_url == 'mobile_price'} class="current"{/if}><span>料金</span></a></li>
 						<li id="n_04" class="item"><a href="{base_url}/mobile_product"{if $view->params.plugin_url == 'mobile_product'} class="current"{/if}><span>製品</span></a></li>
@@ -141,7 +141,7 @@
 										</a>
 									</li>
 								{/foreach}
-								<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" defaultPageCountSize="0" }</div>
+								<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" defaultPageCountSize="1" isNonSpan=true}</div>
 							</ul>
 						</div><!-- /users_blogs -->
 
@@ -395,7 +395,7 @@
 										</li>
 									{/if}
 								{* SP版QAエリア↑ *}
-								<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" defaultPageCountSize="0" }</div>
+								<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" defaultPageCountSize="1" isNonSpan=true}</div>
 							</ul>
 
 						</div><!-- /uq_info -->
@@ -747,7 +747,7 @@
 						</div><!-- /#uqinfo_timeline -->
 						<!-- /pc_uqinfo -->
 
-					<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" defaultPageCountSize="1" }</div>
+					<div class="paging clearfix">{paginator_navi prevTitle="<" nextTitle=">" ellipsis="…" defaultPageCountSize="1" isNonSpan=true}</div>
 
 					</div><!-- /pc_contents -->
 				</section>

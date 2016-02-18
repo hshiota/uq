@@ -613,9 +613,9 @@ section.pc_site .paging {
 }
 
 section.pc_site .paging ul {
-  width: 305px;
-  margin: 0 auto;
-  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
 }
 
  section.pc_site .paging li {
@@ -623,7 +623,7 @@ section.pc_site .paging ul {
   text-align: center;
   border: 1px solid #0099ff;
   border-radius: 3px;
-  margin-right: 10px;
+  margin: 0px 10px 10px 0px;
   font-size: 18px;
   background: #fff;
 }
@@ -664,6 +664,15 @@ section.pc_site .paging li:last-child {
  section.pc_site .paging li.prev a,
  section.pc_site .paging li.next a {
   color: #494949 !important;
+}
+
+section.pc_site .paging ul li.spc{
+  padding: 10px;
+  border: none;
+}
+
+#wimax_page section.pc_site .paging ul li.spc{
+  color: #0099ff;
 }
 
 /* mobile */
@@ -1009,9 +1018,14 @@ h3 {
 }
 
 section.sp_site .paging {
-  width: 296px;
-  margin: 0 auto;
+  width: 100%;
   padding: 25px 0px;
+}
+
+section.sp_site .paging ul {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
 }
 
  section.sp_site .paging ul li {
@@ -1026,7 +1040,7 @@ section.sp_site .paging ul li:last-child {
 
  section.sp_site .paging ul li.prev a,
  section.sp_site .paging ul li.next a {
-  width: 50px;
+  width: 49px;
   padding-top: 7px;
   background: #e8e8e8;
   border: 1px solid #e8e8e8;
@@ -1180,16 +1194,19 @@ ul.page_switch li a {
   border-bottom: 1px solid #0099ff;
 }
 
- nav#g-nav .flipsnap .item a {
-  width: 19%;
-  height: 35px;
-  display: block;
+nav#g-nav .flipsnap li {
+  border-right: 1px solid #0099ff;
   float: left;
+  width: 19%;
+  height: 60px;
+}
+
+ nav#g-nav .flipsnap .item a {
+  display: block;
   font-size: 13px;
   text-align: center;
-  border-right: 1px solid #0099ff;
   color: #0099ff;
-  padding: 25px 1px 0px;
+  padding: 24px 0;
 }
 
  nav#g-nav .flipsnap li#n_02 a span {
@@ -1245,9 +1262,10 @@ ul.page_switch li a {
   color: #fff;
 }
 
-nav#g-nav .flipsnap li#n_05 a,
-#mobile_page nav#g-nav .flipsnap li#n_05 a {
+nav#g-nav .flipsnap li#n_05,
+#mobile_page nav#g-nav .flipsnap li#n_05 {
   border-right: none;
+  width: 22%;
 }
 
 .hide {
@@ -1480,10 +1498,20 @@ section.sp_site .wimax_infopage {
   color: #fff !important;
 }
 
-#mobile_page nav#g-nav .flipsnap .item a {
+#mobile_page nav#g-nav .flipsnap li a.current {
+  padding: 24px 0px;
+}
+
+#mobile_page nav#g-nav .flipsnap li {
   border-right: 1px solid #e2007f;
   color: #e2007f;
-  position: relative
+  float: left;
+  width: 19%;
+  height: 60px;
+}
+
+#mobile_page nav#g-nav .flipsnap .item a {
+  color: #e2007f;
 }
 
 #mobile_page nav#g-nav .flipsnap span {
@@ -1493,12 +1521,15 @@ section.sp_site .wimax_infopage {
 #mobile_page nav#g-nav .flipsnap li#n_02 a span {
   background: url('/preview/uq-wimax/img/uq/title_speed220m_p.png') no-repeat left center;
   background-size: 15px;
-  position: absolute;
   display: block;
   text-align: left;
-  top: 12px;
-  left: 5px;
   width: 45px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#mobile_page nav#g-nav .flipsnap li#n_02 a {
+  padding: 12px 1px 8px;
 }
 
 #mobile_page nav#g-nav .flipsnap li#n_03 a span {
@@ -1519,12 +1550,9 @@ section.sp_site .wimax_infopage {
 #mobile_page nav#g-nav .flipsnap li#n_02 a.current span {
   background: url('/preview/uq-wimax/img/uq/title_speed220m_w.png') no-repeat left center;
   background-size: 15px;
-  position: absolute;
   display: block;
   text-align: left;
-  top: 12px;
-  left: 3px;
-}
+  }
 
 #mobile_page nav#g-nav .flipsnap li#n_03 a.current span {
   background: url('/preview/uq-wimax/img/uq/title_price_w.png') no-repeat left center;
@@ -1554,6 +1582,15 @@ section.sp_site .wimax_infopage {
 #mobile_page section.sp_site .sp_kuchikomi ul li.select span,
 #mobile_page section.sp_site .paging ul li,
 #mobile_page section.sp_site .tweet_page a {
+  color: #e2007f;
+}
+
+section.sp_site .paging ul li.spc{
+  padding: 10px 10px 10px 0;
+  border: none;
+}
+
+#mobile_page section.sp_site .paging ul li.spc{
   color: #e2007f;
 }
 
