@@ -64,19 +64,11 @@
 				<a href="{base_url}/wimax/">
 					<h1><img src="{base_url}/img/uq/uq_logo.png" />のクチコミ</h1>
 					<p>お客様の生のクチコミをまとめてお届け！</p>
-					<ul class="clearfix">
-						<li class="header_wimax"><span>新生活のモバイルネット</span><img src="{base_url}/img/uq/uq_footerlogo.png"></li>
-						<li class="header_mobile"><span>あなたにぴったりくるスマホ</span><img src="{base_url}/img/uq/mobile_logo.png"></li>
-					</ul>
 				</a>
 			{else}
 				<a href="{base_url}/wimax/">
 					<h1>UQのクチコミ</h1>
 					<p>お客様の生のクチコミをまとめてお届け！</p>
-					<ul class="clearfix">
-						<li class="header_wimax">UQ&nbsp;WiMAX</li>
-						<li class="header_mobile">UQ&nbsp;mobile</li>
-					</ul>
 				</a>
 			{/if}
 		</header>
@@ -98,16 +90,16 @@
 				<ul class="flipsnap">
 					{if $view->params.plugin_url|mb_strpos:'wimax' !== FALSE}
 						<li id="n_01" class="item"><a href="{base_url}/wimax"{if $view->params.plugin_url == 'wimax'} class="current"{/if}>全て</a></li>
-						<li id="n_02" class="item"><a href="{base_url}/wimax_speed/"{if $view->params.plugin_url == 'wimax_speed'} class="current"{/if}><span>速度</span></a></li>
-						<li id="n_03" class="item"><a href="{base_url}/wimax_price"{if $view->params.plugin_url == 'wimax_price'} class="current"{/if}><span>料金</span></a></li>
-						<li id="n_04" class="item"><a href="{base_url}/wimax_product"{if $view->params.plugin_url == 'wimax_product'} class="current"{/if}><span>製品</span></a></li>
-						<li id="n_05" class="item"><a href="{base_url}/wimax_area"{if $view->params.plugin_url == 'wimax_area'} class="current"{/if}><span>エリア</span></a></li>
+						<li id="n_02" class="item"><a href="{base_url}/wimax_speed/"{if $view->params.plugin_url|mb_strpos:'wimax_speed' !== FALSE} class="current"{/if}><span>速度</span></a></li>
+						<li id="n_03" class="item"><a href="{base_url}/wimax_price"{if $view->params.plugin_url|mb_strpos:'wimax_price' !== FALSE} class="current"{/if}><span>料金</span></a></li>
+						<li id="n_04" class="item"><a href="{base_url}/wimax_product"{if $view->params.plugin_url|mb_strpos:'wimax_product' !== FALSE} class="current"{/if}><span>製品</span></a></li>
+						<li id="n_05" class="item"><a href="{base_url}/wimax_area"{if $view->params.plugin_url|mb_strpos:'wimax_area' !== FALSE} class="current"{/if}><span>エリア</span></a></li>
 					{else}
 						<li id="n_01" class="item"><a href="{base_url}/mobile"{if $view->params.plugin_url == 'mobile'} class="current"{/if}>全て</a></li>
-						<li id="n_02" class="item"><a href="{base_url}/mobile_speed/"{if $view->params.plugin_url == 'mobile_speed'} class="current"{/if}><span>速度/安定さ</span></a></li>
-						<li id="n_03" class="item"><a href="{base_url}/mobile_price"{if $view->params.plugin_url == 'mobile_price'} class="current"{/if}><span>料金</span></a></li>
-						<li id="n_04" class="item"><a href="{base_url}/mobile_product"{if $view->params.plugin_url == 'mobile_product'} class="current"{/if}><span>製品</span></a></li>
-						<li id="n_05" class="item"><a href="{base_url}/mobile_area"{if $view->params.plugin_url == 'mobile_area'} class="current"{/if}><span>エリア</span></a></li>
+						<li id="n_02" class="item"><a href="{base_url}/mobile_speed/"{if $view->params.plugin_url|mb_strpos:'mobile_speed' !== FALSE} class="current"{/if}><span>速度/安定さ</span></a></li>
+						<li id="n_03" class="item"><a href="{base_url}/mobile_price"{if $view->params.plugin_url|mb_strpos:'mobile_price' !== FALSE} class="current"{/if}><span>料金</span></a></li>
+						<li id="n_04" class="item"><a href="{base_url}/mobile_product"{if $view->params.plugin_url|mb_strpos:'mobile_product' !== FALSE} class="current"{/if}><span>製品</span></a></li>
+						<li id="n_05" class="item"><a href="{base_url}/mobile_area"{if $view->params.plugin_url|mb_strpos:'mobile_area' !== FALSE} class="current"{/if}><span>エリア</span></a></li>
 					{/if}
 				</ul>
 			</nav>
@@ -151,28 +143,26 @@
 								{* SP版QAエリア↓ *}
 									{if $view->params.plugin_url == 'wimax'}
 										<li class="article clearfix">
-											<a href="{base_url}/wimax">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
+											<a href="{base_url}/wimax_speed_qa/#s_qa3">
+												<h3>【Q&A】WiMAXの通信速度ってどのくらい速いの？</h3>
+											</a>
+										</li>
+										<li class="article clearfix">
+											<a href="{base_url}/wimax_price_info_02">
+												<h3>【便利な使い方】公衆無線LANを便利に活用</h3>
 											</a>
 										</li>
 
 										<li class="article clearfix">
 											<a href="{base_url}/wimax">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
-											</a>
-										</li>
-
-										<li class="article clearfix">
-											<a href="{base_url}/wimax">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
+												<h3>【Q&A】製品に関するQA</h3>
 
 											</a>
 										</li>
 
 										<li class="article clearfix">
-											<a href="{base_url}/wimax">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります</h3>
-
+											<a href="{base_url}/wimax_area_info_02">
+												<h3>【エリア拡充情報】ここで使える！屋内スポット</h3>
 											</a>
 										</li>
 									{elseif $view->params.plugin_url == 'wimax_speed'}
@@ -191,7 +181,6 @@
 										<li class="article clearfix">
 											<a href="{base_url}/wimax_speed_qa/#s_qa3">
 												<h3>【Q&A】WiMAXの通信速度ってどのくらい速いの？</h3>
-
 											</a>
 										</li>
 									{elseif $view->params.plugin_url == 'wimax_price'}
@@ -221,18 +210,6 @@
 										</li>
 									{elseif $view->params.plugin_url == 'wimax_product'}
 										<li class="article clearfix">
-											<a href="{base_url}/wimax_product_qa/#pro_qa1">
-												<h3>【Q&A】WX02でWi-Fiがよく切れる、通信速度が出ない時の対処法はありますか？</h3>
-
-											</a>
-										</li>
-										<li class="article clearfix">
-											<a href="{base_url}/wimax_product_qa/#pro_qa2">
-												<h3>【Q&A】W01でWi-Fiがよく切れる、通信速度が出ない時の対処法はありますか？</h3>
-
-											</a>
-										</li>
-										<li class="article clearfix">
 											<a href="{base_url}/wimax_product_info_01">
 												<h3>【便利な使い方】WX02のバッテリーを長く持たせたい</h3>
 
@@ -241,6 +218,19 @@
 										<li class="article clearfix">
 											<a href="{base_url}/wimax_product_info_02">
 												<h3>【便利な使い方】W01のバッテリーを長く持たせたい</h3>
+
+											</a>
+										</li>
+
+										<li class="article clearfix">
+											<a href="{base_url}/wimax_product_qa/#pro_qa3">
+												<h3>【Q&A】WiMAXが使えるWi-Fiルーターはどんな機種がありますか？</h3>
+
+											</a>
+										</li>
+										<li class="article clearfix">
+											<a href="{base_url}/wimax_product_qa/#pro_qa1">
+												<h3>【Q&A】WX02でWi-Fiがよく切れる、通信速度が出ない時の対処法はありますか？</h3>
 
 											</a>
 										</li>
@@ -265,29 +255,26 @@
 										</li>
 									{elseif $view->params.plugin_url == 'mobile'}
 										<li class="article clearfix">
-											<a href="{base_url}/wimax">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
+											<a href="{base_url}/mobile_speed_info/">
+												<h3>【下り最大150Mbps】下り最大150Mbpsの高速通信に対応！</h3>
 
 											</a>
 										</li>
-
 										<li class="article clearfix">
-											<a href="{base_url}/wimax">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
+											<a href="{base_url}/mobile_price_info_01/">
+												<h3>【新登場】全部コミコミの新料金プラン「ぴったりプラン」登場</h3>
 
 											</a>
 										</li>
-
 										<li class="article clearfix">
-											<a href="{base_url}/wimax">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
+											<a href="{base_url}/mobile_product_info/">
+												<h3>【新機種登場】約5.0インチの大画面。電池も余裕の3日持ちのarrows M02登場</h3>
 
 											</a>
 										</li>
-
 										<li class="article clearfix">
-											<a href="{base_url}/wimax">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります</h3>
+											<a href="{base_url}/mobile_area_qa/">
+												<h3>【Q&A】サービスエリアは確認できますか？</h3>
 
 											</a>
 										</li>
@@ -320,7 +307,6 @@
 										<li class="article clearfix">
 											<a href="{base_url}/mobile_price_info_01/">
 												<h3>【新登場】全部コミコミの新料金プラン「ぴったりプラン」登場</h3>
-
 											</a>
 										</li>
 										<li class="article clearfix">
@@ -329,13 +315,14 @@
 											</a>
 										</li>
 										<li class="article clearfix">
-											<a href="{base_url}/mobile_price_info_03/">
-												<h3>【安心・便利】ぴったりアプリパック</h3>
+											<a href="{base_url}/mobile_price_qa/#pr_com">
+												<h3>【Q&A】通信費は安くなりますか？</h3>
 											</a>
 										</li>
+
 										<li class="article clearfix">
-											<a href="{base_url}/mobile_price_qa/">
-												<h3>【Q&A】データ容量の節約はできますか？</h3>
+											<a href="{base_url}/mobile_price_qa_02/#pr_mail">
+												<h3>【Q&A】メールアドレスは引き継げますか？</h3>
 
 											</a>
 										</li>
@@ -367,30 +354,26 @@
 										</li>
 									{else}
 										<li class="article clearfix">
-											<a href="">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
+											<a href="{base_url}/wimax_speed_qa/#s_qa3">
+												<h3>【Q&A】WiMAXの通信速度ってどのくらい速いの？</h3>
+											</a>
+										</li>
+										<li class="article clearfix">
+											<a href="{base_url}/wimax_price_info_02">
+												<h3>【便利な使い方】公衆無線LANを便利に活用</h3>
+											</a>
+										</li>
+
+										<li class="article clearfix">
+											<a href="{base_url}/wimax">
+												<h3>【Q&A】製品に関するQA</h3>
 
 											</a>
 										</li>
 
 										<li class="article clearfix">
-											<a href="">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
-
-											</a>
-										</li>
-
-										<li class="article clearfix">
-											<a href="">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
-
-											</a>
-										</li>
-
-										<li class="article clearfix">
-											<a href="">
-												<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります</h3>
-
+											<a href="{base_url}/wimax_area_info_02">
+												<h3>【エリア拡充情報】ここで使える！屋内スポット</h3>
 											</a>
 										</li>
 									{/if}
@@ -492,31 +475,30 @@
 								<ul>
 									{* PC版QAエリア↓ *}
 										{if $view->params.plugin_url == 'wimax'}
+
 											<li class="contents_section speed">
+												<a href="{base_url}/wimax_speed_qa/#s_qa3">
+													<h3>【Q&A】WiMAXの通信速度ってどのくらい速いの？</h3>
+													<p><span class="view_btn">view</span></p>
+												</a>
+											</li>
+											<li class="contents_section price">
+												<a href="{base_url}/wimax_price_info_02">
+													<h3>【便利な使い方】公衆無線LANを便利に活用</h3>
+													<p><span class="view_btn">view</span></p>
+												</a>
+											</li>
+											<li class="contents_section product">
 												<a href="{base_url}/wimax">
-													<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
+													<h3>【Q&A】製品に関するQA</h3>
 													<p><span class="view_btn">view</span></p>
 												</a>
 											</li>
 
-											<li class="contents_section price">
-												<a href="{base_url}/wimax">
-													<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
-													<p class="view_btn"><span>view</span></p>
-												</a>
-											</li>
-
-											<li class="contents_section product">
-												<a href="{base_url}/wimax">
-													<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
-													<p class="view_btn"><span>view</span></p>
-												</a>
-											</li>
-
 											<li class="contents_section area">
-												<a href="{base_url}/wimax">
-													<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります</h3>
-													<p class="view_btn"><span>view</span></p>
+												<a href="{base_url}/wimax_area_info_02">
+													<h3>【エリア拡充情報】ここで使える！屋内スポット</h3>
+													<p><span class="view_btn">view</span></p>
 												</a>
 											</li>
 										{elseif $view->params.plugin_url == 'wimax_speed'}
@@ -576,15 +558,16 @@
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
+
 											<li class="contents_section product">
-												<a href="{base_url}/wimax_product_qa/#pro_qa1">
-													<h3>【Q&A】WX02でWi-Fiがよく切れる、通信速度が出ない時の対処法はありますか？</h3>
+												<a href="{base_url}/wimax_product_qa/#pro_qa3">
+													<h3>【Q&A】WiMAXが使えるWi-Fiルーターはどんな機種がありますか？</h3>
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
 											<li class="contents_section product">
-												<a href="{base_url}/wimax_product_qa/#pro_qa2">
-													<h3>【Q&A】W01でWi-Fiがよく切れる、通信速度が出ない時の対処法はありますか？</h3>
+												<a href="{base_url}/wimax_product_qa/#pro_qa1">
+													<h3>【Q&A】WX02でWi-Fiがよく切れる、通信速度が出ない時の対処法はありますか？</h3>
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
@@ -609,29 +592,26 @@
 											</li>
 										{elseif $view->params.plugin_url == 'mobile'}
 											<li class="contents_section speed">
-												<a href="{base_url}/wimax">
-													<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
+												<a href="{base_url}/mobile_speed_info/">
+													<h3>【下り最大150Mbps】下り最大150Mbpsの高速通信に対応！</h3>
 													<p><span class="view_btn">view</span></p>
 												</a>
 											</li>
-
 											<li class="contents_section price">
-												<a href="{base_url}/wimax">
-													<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
+												<a href="{base_url}/mobile_price_info_01/">
+													<h3>【新登場】全部コミコミの新料金プラン「ぴったりプラン」登場</h3>
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
-
 											<li class="contents_section product">
-												<a href="{base_url}/wimax">
-													<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。</h3>
+												<a href="{base_url}/mobile_product_info/">
+													<h3>【新機種登場】約5.0インチの大画面。電池も余裕の3日持ちのarrows M02登場</h3>
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
-
 											<li class="contents_section area">
-												<a href="{base_url}/wimax">
-													<h3>QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります。QA/インフォのタイトル文が入ります</h3>
+												<a href="{base_url}/mobile_area_qa/">
+													<h3>【Q&A】サービスエリアは確認できますか？</h3>
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
@@ -661,6 +641,7 @@
 												</a>
 											</li>
 										{elseif $view->params.plugin_url == 'mobile_price'}
+
 											<li class="contents_section price">
 												<a href="{base_url}/mobile_price_info_01/">
 													<h3>【新登場】全部コミコミの新料金プラン「ぴったりプラン」登場</h3>
@@ -674,14 +655,15 @@
 												</a>
 											</li>
 											<li class="contents_section price">
-												<a href="{base_url}/mobile_price_info_03/">
-													<h3>【安心・便利】ぴったりアプリパック</h3>
+												<a href="{base_url}/mobile_price_qa/#pr_com">
+													<h3>【Q&A】通信費は安くなりますか？</h3>
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
+
 											<li class="contents_section price">
-												<a href="{base_url}/mobile_price_qa/">
-													<h3>【Q&A】データ容量の節約はできますか？</h3>
+												<a href="{base_url}/mobile_price_qa_02/#pr_mail">
+													<h3>【Q&A】メールアドレスは引き継げますか？</h3>
 													<p class="view_btn"><span>view</span></p>
 												</a>
 											</li>
@@ -786,44 +768,44 @@
 			<div class="footer_wimax">
 				<p><span>のクチコミ</span></p>
 				<ul class="clearfix wimaxlink_kuchikomi">
-					<li><a href="" class="webfont_w3">全て</a></li>
-					<li><a href="" class="webfont_w3">速度</a></li>
-					<li><a href="" class="webfont_w3">料金</a></li>
-					<li><a href="" class="webfont_w3">製品</a></li>
-					<li><a href="" class="webfont_w3">エリア</a></li>
+					<li><a href="{base_url}/wimax/" class="webfont_w3">全て</a></li>
+					<li><a href="{base_url}/wimax_speed/" class="webfont_w3">速度</a></li>
+					<li><a href="{base_url}/wimax_price/" class="webfont_w3">料金</a></li>
+					<li><a href="{base_url}/wimax_product/" class="webfont_w3">製品</a></li>
+					<li><a href="{base_url}/wimax_area/" class="webfont_w3">エリア</a></li>
 				</ul>
 			</div>
 
 			<div class="footer_mobile">
 				<p><span>のクチコミ</span></p>
 				<ul class="clearfix wimaxlink_kuchikomi">
-					<li><a href="">全て</a></li>
-					<li><a href="">速度</a></li>
-					<li><a href="">料金</a></li>
-					<li><a href="">製品</a></li>
-					<li><a href="">エリア</a></li>
+					<li><a href="{base_url}/mobile/">全て</a></li>
+					<li><a href="{base_url}/mobile_speed/">速度</a></li>
+					<li><a href="{base_url}/mobile_price/">料金</a></li>
+					<li><a href="{base_url}/mobile_product/">製品</a></li>
+					<li><a href="{base_url}/mobile_area/">エリア</a></li>
 				</ul>
 			</div>
 
 			<div class="footer_wimax">
 				<p><span>のクチコミ</span></p>
 				<ul>
-					<li><a href="">UQコミュニケーションズサイトトップ</a></li>
-					<li><a href="">WiMAXの15日無料お試し申込み</a></li>
-					<li><a href="">WiMAXのお申し込み</a></li>
+					<li><a href="http://www.uqwimax.jp/">UQコミュニケーションズサイトトップ</a></li>
+					<li><a href="http://www.uqwimax.jp/signup/trywimax/">WiMAXの15日無料お試し申込み</a></li>
+					<li><a href="http://www.uqwimax.jp/shop/">WiMAXのお申し込み</a></li>
 				</ul>
 			</div>
 
 			<div class="footer_mobile clearfix">
 				<p><span>のクチコミ</span></p>
 				<ul>
-					<li><a href="">UQmobileサイトトップ</a></li>
-					<li><a href="">UQmobileのお申し込み</a></li>
+					<li><a href="http://www.uqmobile.jp/">UQmobileサイトトップ</a></li>
+					<li><a href="http://www.uqmobile.jp/flow/">UQmobileのお申し込み</a></li>
 				</ul>
 			</div>
 
 				<ul class="menuList clearfix">
-					<li><a href="../about.html">当サイトについて</a></li>
+					<li><a href="{base_url}/index_about/">当サイトについて</a></li>
 					<li><a href="http://www.uqwimax.jp/annai/kokai/kojin/" target="_blank">プライバシーポリシー</a></li>
 				</ul>
 

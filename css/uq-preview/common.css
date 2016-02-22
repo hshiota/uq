@@ -107,7 +107,6 @@ h2 {
 }
 
 header {
-  height: 90px;
   background: #fff;
   width: 100%;
   text-align: center;
@@ -418,6 +417,7 @@ section.pc_site #twitter_timeline #tweet_list ul li {
   padding: 15px 0px !important;
   border-bottom: 1px dashed #dcdcdc;
   height: 205px;
+  min-height: 205px !important;
 }
 
 section.pc_site #twitter_timeline #tweet_list ul li .img {
@@ -666,11 +666,6 @@ section.pc_site .paging li:last-child {
   color: #494949 !important;
 }
 
-section.pc_site .paging ul li.spc{
-  padding: 10px;
-  border: none;
-}
-
 #wimax_page section.pc_site .paging ul li.spc{
   color: #0099ff;
 }
@@ -841,6 +836,11 @@ background-size: 38px;
   border: 1px solid #e2007f;
 }
 
+section.pc_site .paging ul li.spc{
+  padding: 9px 9px 9px 0;
+  border: none !important;
+  margin-right: 0;
+}
 
 /* footer */
 footer {
@@ -985,6 +985,17 @@ footer .footer_pc ul li p {
   }
 
 
+ul.gray li.wimax_switch a {
+  background: #dcdcdc;
+  color: #a7a7a7;
+}
+
+ul.gray li.wimax_switch a span {
+  background: url('/preview/uq-wimax/img/uq/uqwimaxlogo_off.png') no-repeat left center;
+  background-size: 120px;
+}
+
+
 }
 
 /* pc end */
@@ -1059,6 +1070,16 @@ section.sp_site .paging ul li:last-child {
   color: #0099ff;
 }
 
+ section.sp_site .paging li.disabled span {
+    color: #FFFFFF;
+    background-color: #DDDDDD;
+    display: block;
+    height: 26px;
+    padding-top: 7px;
+    width: 33px;
+    border: none;
+}
+
 section.sp_site .paging ul li a {
   background: #fff;
 }
@@ -1075,10 +1096,9 @@ section.sp_site .paging ul li.jump {
 /* header */
 header {
   background: #fff;
-  height: 70px;
   text-align: center;
   line-height: 1.2em;
-  padding: 10px 0px 3px;
+  padding: 10px 0px;
 }
 
 header img {
@@ -1803,5 +1823,14 @@ footer .footer_pc,
   font-family: "Hiragino Kaku Gothic W3 JIS2004" !important;
 }
 
+ul.gray li.wimax_switch a {
+  background: #dcdcdc;
+  color: #a7a7a7;
+}
+
+ul.gray li.wimax_switch a span {
+  background: url('/preview/uq-wimax/img/uq/uq_tablogo_g_sp.png') no-repeat left center;
+  background-size: 42px;
+}
 }
 /* sp end */
