@@ -891,14 +891,16 @@ footer .footer_contents ul.menuList a:hover {
 
 footer .footer_contents .footer_wimax p span {
   background: url('/preview/uq-wimax/img/uq/uq_footerlogo.png')no-repeat left center;
-  background-size: 63px;
-  padding-left: 63px;
+  background-size: 90px;
+  padding-left: 90px;
+  padding-bottom: 2px;
 }
 
 footer .footer_contents .footer_mobile p span {
   background: url('/preview/uq-wimax/img/uq/mobile_footerlogo.png')no-repeat left center;
-  background-size: 63px;
-  padding-left: 63px;
+  background-size: 90px;
+  padding-left: 90px;
+  padding-bottom: 2px;
 }
 
 footer .footer_contents .footer_wimax ul.wimaxlink_kuchikomi li,
@@ -1041,7 +1043,7 @@ section.sp_site .paging ul {
 
  section.sp_site .paging ul li {
   float: left;
-  padding-right: 10px;
+  padding-right: 8px;
   color: #0099ff;
 }
 
@@ -1051,7 +1053,7 @@ section.sp_site .paging ul li:last-child {
 
  section.sp_site .paging ul li.prev a,
  section.sp_site .paging ul li.next a {
-  width: 49px;
+  width: 30px;
   padding-top: 7px;
   background: #e8e8e8;
   border: 1px solid #e8e8e8;
@@ -1076,7 +1078,7 @@ section.sp_site .paging ul li:last-child {
     display: block;
     height: 26px;
     padding-top: 7px;
-    width: 33px;
+    width: 30px;
     border: none;
 }
 
@@ -1606,7 +1608,7 @@ section.sp_site .wimax_infopage {
 }
 
 section.sp_site .paging ul li.spc{
-  padding: 10px 10px 10px 0;
+  padding: 10px 8px 10px 0;
   border: none;
 }
 

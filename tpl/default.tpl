@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr" xmlns:og="http://ogp.me/ns#">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 		<title>{if $view->isPreview}[Preview] {/if}{$title_for_layout|default:$view->site.title|escape:"html":"UTF-8"}</title>
 		<link rel="shortcut icon" href="{base_url}/favicon.ico" />
 		{if $view->site.keyword}
@@ -82,8 +83,8 @@
 					<p>お客様の生のクチコミをまとめてお届け！</p>
 				</a>
 			{else}
-				<a href="{base_url}/wimax/">
-					<h1>UQのクチコミ</h1>
+				<a href="{base_url}/mobile/">
+					<h1><img src="{base_url}/img/uq/uqm_headerlogo.png" />のクチコミ</h1>
 					<p>お客様の生のクチコミをまとめてお届け！</p>
 				</a>
 			{/if}
@@ -92,7 +93,7 @@
 		{literal}<div class="gallery js-flickity _flickity_tmp_before_parent" data-flickity-options='{ "freeScroll": true, "wrapAround": true, "autoPlay": 5000,"resizeBound": true }'>{/literal}
 				<div class="gallery-cell _flickity_tmp_before"><a href="http://www.uqwimax.jp/" target="_blank"><img src="{base_url}/img/uq/img_banner1.png"></a></div>
 				<div class="gallery-cell _flickity_tmp_before"><a href="http://www.uqwimax.jp/lp/newlife/" target="_blank"><img src="{base_url}/img/uq/img_banner2.png"></a></div>
-				<div class="gallery-cell _flickity_tmp_before"><a href="http://www.uqwimax.jp/lp/life/01/" target="_blank"><img src="{base_url}/img/uq/img_banner3.png"></a></div>
+				<div class="gallery-cell _flickity_tmp_before"><a href="http://www.uqwimax.jp/lp/lineup/index02.html" target="_blank"><img src="{base_url}/img/uq/img_banner3.jpg"></a></div>
 		</div>
 
 		<!-- navi -->
@@ -105,6 +106,12 @@
 			<nav id="g-nav">
 				<ul class="flipsnap">
 					{if $view->params.plugin_url|mb_strpos:'wimax' !== FALSE}
+						<li id="n_01" class="item"><a href="{base_url}/wimax"{if $view->params.plugin_url == 'wimax'} class="current"{/if}>全て</a></li>
+						<li id="n_02" class="item"><a href="{base_url}/wimax_speed/"{if $view->params.plugin_url|mb_strpos:'wimax_speed' !== FALSE} class="current"{/if}><span>速度</span></a></li>
+						<li id="n_03" class="item"><a href="{base_url}/wimax_price"{if $view->params.plugin_url|mb_strpos:'wimax_price' !== FALSE} class="current"{/if}><span>料金</span></a></li>
+						<li id="n_04" class="item"><a href="{base_url}/wimax_product"{if $view->params.plugin_url|mb_strpos:'wimax_product' !== FALSE} class="current"{/if}><span>製品</span></a></li>
+						<li id="n_05" class="item"><a href="{base_url}/wimax_area"{if $view->params.plugin_url|mb_strpos:'wimax_area' !== FALSE} class="current"{/if}><span>エリア</span></a></li>
+					{elseif $view->params.plugin_url|mb_strpos:'index_about' !== FALSE}
 						<li id="n_01" class="item"><a href="{base_url}/wimax"{if $view->params.plugin_url == 'wimax'} class="current"{/if}>全て</a></li>
 						<li id="n_02" class="item"><a href="{base_url}/wimax_speed/"{if $view->params.plugin_url|mb_strpos:'wimax_speed' !== FALSE} class="current"{/if}><span>速度</span></a></li>
 						<li id="n_03" class="item"><a href="{base_url}/wimax_price"{if $view->params.plugin_url|mb_strpos:'wimax_price' !== FALSE} class="current"{/if}><span>料金</span></a></li>
@@ -171,8 +178,8 @@
 			<div class="footer_sp">
 				<p>UQ WiMAX Officialアカウント</p>
 				<ul class="clearfix footer_sp_acc">
-					<li class="footer_twitter_sp"><a href=""><img src="{base_url}/img/uq/twitter_official_sp.png" /></a></li>
-					<li class="footer_facebook_sp"><a href=""><img src="{base_url}/img/uq/fb_official_sp.png" /></a></li>
+					<li class="footer_twitter_sp"><a href="https://twitter.com/UQ_WiMAX" target="_blank"><img src="{base_url}/img/uq/twitter_official_sp.png" /></a></li>
+					<li class="footer_facebook_sp"><a href="http://www.facebook.com/uqwimax/" target="_blank"><img src="{base_url}/img/uq/fb_official_sp.png" /></a></li>
 				</ul>
 			</div>
 
@@ -214,17 +221,17 @@
 			<div class="footer_wimax">
 				<p><span>のクチコミ</span></p>
 				<ul>
-					<li><a href="http://www.uqwimax.jp/">UQコミュニケーションズサイトトップ</a></li>
-					<li><a href="http://www.uqwimax.jp/signup/trywimax/">WiMAXの15日無料お試し申込み</a></li>
-					<li><a href="http://www.uqwimax.jp/shop/">WiMAXのお申し込み</a></li>
+					<li><a href="http://www.uqwimax.jp/" target="_blank">UQコミュニケーションズサイトトップ</a></li>
+					<li><a href="http://www.uqwimax.jp/signup/trywimax/" target="_blank">WiMAXの15日無料お試し申込み</a></li>
+					<li><a href="http://www.uqwimax.jp/shop/" target="_blank">WiMAXのお申し込み</a></li>
 				</ul>
 			</div>
 
 			<div class="footer_mobile clearfix">
 				<p><span>のクチコミ</span></p>
 				<ul>
-					<li><a href="http://www.uqmobile.jp/">UQmobileサイトトップ</a></li>
-					<li><a href="http://www.uqmobile.jp/flow/">UQmobileのお申し込み</a></li>
+					<li><a href="http://www.uqmobile.jp/" target="_blank">UQmobileサイトトップ</a></li>
+					<li><a href="http://www.uqmobile.jp/flow/" target="_blank">UQmobileのお申し込み</a></li>
 				</ul>
 			</div>
 

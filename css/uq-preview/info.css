@@ -74,7 +74,7 @@
     display: block;
     color: #003399;
     padding: 16px 0px;
-    background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_b_on.png') no-repeat 41% center;
+    background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_b_on.png') no-repeat 31% center;
     border: 1px solid #003399;
   }
 
@@ -82,7 +82,7 @@
    display: block;
    color: #fff;
    padding: 16px 0px;
-   background: #003399 url('/preview/uq-wimax/img/uq/arrow_morebtn_b.png') no-repeat 41% center;
+   background: #003399 url('/preview/uq-wimax/img/uq/arrow_morebtn_b.png') no-repeat 31% center;
   }
 
    section.info .relation {
@@ -107,6 +107,7 @@
 
    section.info .relation li.speed a {
     background: url('/preview/uq-wimax/img/uq/title_speed220m.png') no-repeat center 10%;
+    min-height: 190px;
   }
 
    section.info .relation li.speed a:hover {
@@ -119,6 +120,7 @@
 
    section.info .relation li.price a {
     background: url('/preview/uq-wimax/img/uq/title_price.png') no-repeat center 10%;
+    min-height: 190px;
   }
 
    section.info .relation li.price a:hover {
@@ -131,6 +133,7 @@
 
    section.info .relation li.product a {
     background: url('/preview/uq-wimax/img/uq/title_product.png') no-repeat center 10%;
+    min-height: 190px;
   }
 
    section.info .relation li.product a:hover {
@@ -143,6 +146,7 @@
 
    section.info .relation li.area a {
     background: url('/preview/uq-wimax/img/uq/title_area.png') no-repeat center 10%;
+    min-height: 190px;
   }
 
    section.info .relation li.area a:hover {
@@ -208,13 +212,13 @@
   }
 
   #mobile_page section.info p.more_btn a span {
-    background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_p_on.png') no-repeat 41% center;
+    background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_p_on.png') no-repeat 31% center;
     border: 1px solid #e2007f;
     color: #e2007f;
   }
 
   #mobile_page section.info p.more_btn a span:hover {
-    background: #e2007f url('/preview/uq-wimax/img/uq/arrow_morebtn_p.png') no-repeat 41% center;
+    background: #e2007f url('/preview/uq-wimax/img/uq/arrow_morebtn_p.png') no-repeat 31% center;
     color: #fff;
   }
 
@@ -322,15 +326,19 @@ section.info .contents .info_main p.more_btn a {
      display: block;
    }
 
+section.info .contents .info_main p.more_btn a {
+  display: block;
+  text-align: center;
+  padding: 15px 0px;
+  border: 1px solid #003399;
+   }
+
 section.info .contents .info_main p.more_btn a span {
-     display: block;
      color: #003399;
-     text-align: center;
-     padding: 15px 0px;
      font-size: 12px;
-     background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_b_on.png') no-repeat 29% center;
+     background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_b_on.png') no-repeat left center;
      background-size: 10px;
-     border: 1px solid #003399;
+     padding-left: 13px;
    }
 
 section.info .contents .relation {
@@ -406,12 +414,16 @@ section.info .contents .relation li.area a h3 span {
      background: #e2007f;
    }
 
+#mobile_page section.info .contents .info_main p.more_btn a {
+  border: 1px solid #e2007f;
+  }
+
 #mobile_page section.info .contents .info_main p.more_btn a span {
-     background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_p_on.png') no-repeat 29% center;
+     background: #fff url('/preview/uq-wimax/img/uq/arrow_morebtn_p_on.png') no-repeat left center;
      background-size: 10px;
      color: #e2007f;
-     border: 1px solid #e2007f;
-   }
+     padding-left: 13px;
+  }
 
 #mobile_page section.info .contents .relation li.contents_section a {
   background: #fff url('/preview/uq-wimax/img/uq/arrow_right_p.png') no-repeat 97% center;

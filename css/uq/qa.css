@@ -103,7 +103,7 @@ section.qa .text p.answer span {
     display: block;
     color: #003399;
     padding: 10px 0px;
-    background: #fff url('../img/arrow_morebtn_b_on.png') no-repeat 35% center;
+    background: #fff url('../img/arrow_morebtn_b_on.png') no-repeat 33% center;
     border: 1px solid #003399;
   }
 
@@ -111,7 +111,7 @@ section.qa .text p.answer span {
    display: block;
    color: #fff;
    padding: 10px 0px;
-   background: #003399 url('../img/arrow_morebtn_b.png') no-repeat 35% center;
+   background: #003399 url('../img/arrow_morebtn_b.png') no-repeat 33% center;
   }
 
    section.qa .relation {
@@ -136,6 +136,7 @@ section.qa .text p.answer span {
 
    section.qa .relation li.speed a {
     background: url('../img/title_speed220m.png') no-repeat center 10%;
+    min-height: 190px;
   }
 
    section.qa .relation li.speed a:hover {
@@ -148,6 +149,7 @@ section.qa .text p.answer span {
 
    section.qa .relation li.price a {
     background: url('../img/title_price.png') no-repeat center 10%;
+    min-height: 190px;
   }
 
    section.qa .relation li.price a:hover {
@@ -160,6 +162,7 @@ section.qa .text p.answer span {
 
    section.qa .relation li.product a {
     background: url('../img/title_product.png') no-repeat center 10%;
+    min-height: 190px;
   }
 
    section.qa .relation li.product a:hover {
@@ -172,6 +175,7 @@ section.qa .text p.answer span {
 
   section.qa .relation li.area a {
     background: url('../img/title_area.png') no-repeat center 10%;
+    min-height: 190px;
   }
 
    section.qa .relation li.area a:hover {
@@ -405,17 +409,18 @@ section.qa .text h3.qa_title {
 
    section.qa .contents .qa_main p.more_btn a {
      display: block;
+     text-align: center;
+     padding: 15px 0px;
+     border: 1px solid #003399;
    }
 
    section.qa .contents .qa_main p.more_btn a span {
-     display: block;
      color: #003399;
-     text-align: center;
-     padding: 15px 0px;
      font-size: 12px;
-     background: #fff url('../img/arrow_morebtn_b_on.png') no-repeat 19% center;
+     background: #fff url('../img/arrow_morebtn_b_on.png') no-repeat left center;
      background-size: 10px;
-     border: 1px solid #003399;
+     padding-left: 13px;
+     display: inline;
    }
 
 section.qa .contents .relation {
@@ -499,15 +504,13 @@ section.qa .contents .relation p.view_btn {
     background-size: 25px;
   }
 
-#mobile_page section.qa .text p.answer {
-    background: url('../img/qa_a_p.png') no-repeat left top;
-    background-size: 25px;
-  }
+#mobile_page section.qa .contents .qa_main p.more_btn a {
+     border: 1px solid #e2007f;
+   }
 
 #mobile_page section.qa .contents .qa_main p.more_btn a span {
-     background: #fff url('../img/arrow_morebtn_p_on.png') no-repeat 19% center;
+     background: #fff url('../img/arrow_morebtn_p_on.png') no-repeat left center;
      background-size: 10px;
-     border: 1px solid #e2007f;
      color: #e2007f;
    }
 
